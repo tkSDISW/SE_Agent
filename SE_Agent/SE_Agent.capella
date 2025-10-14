@@ -3401,9 +3401,6 @@
                 id="ef223c37-3fcb-4b90-9011-81c3089a6bad" name="Context Memory and Trace Store"
                 description="&lt;p>Maintains state of artifacts, last tool used, and traces agent actions for replay and analysis.&lt;/p>&#xA;">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="472bfdee-ebb2-4e72-bc8a-6c356a475295" name="CP 1" orientation="IN"
-                  kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="afa88b95-285d-44f3-8b7c-91edbd48aeab" name="CP 2" orientation="OUT"
                   kind="FLOW"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
@@ -3418,6 +3415,9 @@
                   description="&lt;p>&lt;strong>Artifact Registry&lt;/strong> realizes &lt;em data-end=&quot;4906&quot; data-start=&quot;4875&quot;>Track Artifacts and Versions.&lt;/em>&lt;/p>&#xA;">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                     id="5901eac4-55b0-48df-a398-3ec9eabae557" name="CP 1" orientation="OUT"
+                    kind="FLOW"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="472bfdee-ebb2-4e72-bc8a-6c356a475295" name="CP 1" orientation="IN"
                     kind="FLOW"/>
               </ownedLogicalComponents>
             </ownedLogicalComponents>
