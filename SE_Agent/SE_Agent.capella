@@ -521,6 +521,8 @@
               id="7738190a-41db-438d-9d52-4447e6763917" extended="#c6ee192d-add4-4999-8684-cbb49fc296d8"/>
           <extends xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityExtend"
               id="add9cd2b-bf23-49d6-b64b-fd16dfcb5512" extended="#3aab6576-ed44-4c84-a63d-e91d73d97ab4"/>
+          <extends xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityExtend"
+              id="c7fc15a9-b50a-4ab5-8730-51228e8b85b1" extended="#68c6ab4e-a595-450e-8f1d-8ddce9067f35"/>
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="13774ffb-8b34-4622-8594-adce43bc76f1" included="#2744b4b8-b738-437b-88d7-1586f982741f"/>
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
@@ -531,6 +533,8 @@
               id="f2f26c68-86dc-48e8-991f-54b7361ff408" involved="#93d2ecb2-f06f-49ed-ab92-72fa4d569d78"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="acaf1db4-1774-474a-b30c-7972a06cfd12" involved="#14535b25-eb7c-4c76-935e-e02e0f11772b"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="7375913e-2478-4014-a2df-6bc147f28a6d" involved="#dc51fc48-5546-45e4-87da-8690139628f3"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="4ba36fa2-41e5-486c-a398-a5d137215f9f" name="Architecture Development">
@@ -550,8 +554,6 @@
               id="602ff1fe-4a33-416f-b0d3-828542810f4f" involved="#93d2ecb2-f06f-49ed-ab92-72fa4d569d78"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="ce97f3b4-40fc-43c6-a136-7f8e52c247a4" involved="#14535b25-eb7c-4c76-935e-e02e0f11772b"/>
-          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
-              id="2d31ef51-8a33-4565-9f76-b06727b7a0ab" involved="#a79e6020-d80b-4427-824b-98c30a2ac87c"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="b1169c98-04ad-49ba-abdf-e7dee6696fa5" name="Verification of Architecture and Requirements">
@@ -599,7 +601,7 @@
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="e5751eec-2bb6-4927-9877-f24f0ca02282" involved="#93d2ecb2-f06f-49ed-ab92-72fa4d569d78"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
-              id="17651d5d-1b5b-41d5-a0f4-864b18cb845b" involved="#14535b25-eb7c-4c76-935e-e02e0f11772b"/>
+              id="1a74488e-0238-4696-b535-47edf85e2c12" involved="#4d9a6f08-4672-47a9-b9b1-3bc85f327f46"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="377c088d-afe6-43be-81de-0cba8bbf1003" name="Manage Prompts">
@@ -607,6 +609,8 @@
               id="208c2822-dcea-47de-9c82-1207a934423e" involved="#93d2ecb2-f06f-49ed-ab92-72fa4d569d78"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="546496c3-2f8d-462e-8f79-50ed15b17fa9" involved="#14535b25-eb7c-4c76-935e-e02e0f11772b"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="f80d8f98-1c40-48e9-8ea4-29220c51cab9" involved="#4d9a6f08-4672-47a9-b9b1-3bc85f327f46"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="c6ee192d-add4-4999-8684-cbb49fc296d8" name="Write to Requrement tool">
@@ -624,6 +628,30 @@
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="e0e42863-16d4-474f-89db-25ce35a2d440" name="Compare Fabrics Elements"/>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="367e6667-e5a2-413e-b721-6813ff936af8" name="Architecture Verification">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="9b4abac8-e2ae-43c3-95ff-54891fd22443" included="#12f1a71f-f0be-4bb3-aef5-d0aba7cece67"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="cf6653d4-e5cc-461b-8a9e-efbd7be1e4c6" included="#24b4716e-529c-4974-9060-e4de897fd584"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="1ac1872a-6c15-4052-894f-e5417d30be1a" included="#e0e42863-16d4-474f-89db-25ce35a2d440"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="4fb62c25-2d09-4041-898d-02467a0b1165" included="#cd216d70-2151-4224-8c62-a70daa50881f"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="51fbe995-c466-440d-b577-9a59c0b1ab2e" included="#68c6ab4e-a595-450e-8f1d-8ddce9067f35"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="3d070f5e-b0c6-46ae-ac80-676ee6ba9677" involved="#a79e6020-d80b-4427-824b-98c30a2ac87c"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="c727f022-d4ed-4222-91c6-3f030acbbea2" involved="#14535b25-eb7c-4c76-935e-e02e0f11772b"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="a19e596b-2a8a-45ac-bfaf-ce35b216effc" involved="#93d2ecb2-f06f-49ed-ab92-72fa4d569d78"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="68c6ab4e-a595-450e-8f1d-8ddce9067f35" name="Review Requirements">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="360c51c3-a52b-47ad-80b6-dd9253f98f82" involved="#c2afcd47-a49c-4de0-9f2d-614da6304cf8"/>
+        </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="5a36ec78-653e-4f03-afc3-f03f601b4c7f" name="Interfaces"/>
@@ -651,6 +679,8 @@
             name="SE Agent " abstractType="#b9a55e5a-492b-45d7-b6ad-f2eb05002bdb"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="70fbc34a-a40a-4a77-b3d2-f66bbc37bea3"
             name="Alternate " abstractType="#ff60b59e-5c12-4503-a477-7ee8e61dbcc4"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ffb12669-2faf-40df-86ac-dfd8ab859a4c"
+            name="System Engineering Support" abstractType="#4d9a6f08-4672-47a9-b9b1-3bc85f327f46"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="93d2ecb2-f06f-49ed-ab92-72fa4d569d78"
             name="SE Agent ">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -753,6 +783,8 @@
               id="87a2da63-31da-4a4a-b6b8-122db76b3a06" targetElement="#e14ad0c2-9c2f-42e3-9f70-89b4c0fd3fc0"
               sourceElement="#ff60b59e-5c12-4503-a477-7ee8e61dbcc4"/>
         </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="4d9a6f08-4672-47a9-b9b1-3bc85f327f46"
+            name="System Engineering Support" actor="true" human="true"/>
       </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
@@ -2379,7 +2411,7 @@
               id="e5ee9a34-f460-4b9a-9c26-ae46f4b88226" name="Interactive Dialog ">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="874d6d96-bee2-44e2-bab2-4001ca5c3aaf" involved="#74157790-dbed-4630-aeb4-f23e3046d23c"
-                source="#ecec7c67-18ed-4b72-8b35-b171925f3bf2" target="#8cf6c236-eb89-4876-a0af-ec17cae8fa7d"/>
+                source="#ecec7c67-18ed-4b72-8b35-b171925f3bf2" target="#c9d02b3a-4314-40c0-8233-60d5b6856ec0"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="8cf6c236-eb89-4876-a0af-ec17cae8fa7d" involved="#21ebb8ea-ddee-4fde-93d7-e356541f52fc"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
@@ -2422,6 +2454,23 @@
                 id="03d2b5ce-878b-45d2-bf8f-da4c5b7523c2" involved="#498a9f5b-20d1-4928-9a6e-e180896afe63"
                 targetReferenceHierarchy="#221e163d-d765-492d-beea-54916e90c552" source="#d03b6fd6-c412-4f62-be8f-8a2f55f810cb"
                 target="#523439db-5614-4aab-ae01-9e97475f194c"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="c9d02b3a-4314-40c0-8233-60d5b6856ec0" involved="#c4d120f9-97d4-4dac-9651-9ed3c533927e"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="8502f461-80da-4541-ab69-1d91bf67e101" involved="#ffff353d-ca2c-4dba-b3fe-1cb0facf1746"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="a7127354-b6be-486c-baae-7425f6377225" involved="#65eeec16-f852-40fe-a755-959291678df3"
+                source="#c9d02b3a-4314-40c0-8233-60d5b6856ec0" target="#8502f461-80da-4541-ab69-1d91bf67e101"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="bc1bac4d-a655-462a-9385-fc23dcc72e63" involved="#21ebb8ea-ddee-4fde-93d7-e356541f52fc"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="9b3877c7-8d14-4484-968e-9cf98a2c0328" involved="#a17d4b65-4964-4c63-bc0e-f572b7c304b0"
+                source="#c9d02b3a-4314-40c0-8233-60d5b6856ec0" target="#bc1bac4d-a655-462a-9385-fc23dcc72e63"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="861a0f4f-1ddd-40d9-9d74-76eac0103d14" involved="#12bc2fc3-2f1a-497e-82b8-f980a10c7490"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="026460b6-6430-413a-b47b-f3150fdb04fb" involved="#ac026f27-864a-48a9-9e63-44860be322d4"
+                source="#c9d02b3a-4314-40c0-8233-60d5b6856ec0" target="#861a0f4f-1ddd-40d9-9d74-76eac0103d14"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
               id="f98d7c38-a501-44fe-bce8-09eaa4778930" name="Replay">
@@ -2881,7 +2930,7 @@
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="09531df3-905a-44b9-90b4-3eed7a6841c1" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="4d047a89-468e-4e75-99ac-3c49a483a8ff" name="FIP 2"/>
+                id="6fe0875d-f5b1-42b1-af4b-a66ce4e31e66" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="9ffcb8fc-86dd-493c-a6df-ed073ddce2a9" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -2914,10 +2963,10 @@
               id="ae7a0a2f-86e5-4906-8e96-ae8b3726bfa2" name="Trace Action" description="&lt;p>Record decision chain and tool results.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c19ed751-1744-4879-99fc-447c674a6ece" name="Manage Contract Transitions"
-              description="&lt;p>Govern reasoning state changes.&lt;/p>&#xA;"/>
+              description="&lt;p>Maintain and enforce the active contract governing agent behavior.&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Switch from DEFAULT to SESSION when a Guided Session is initiated (e.g., via execute_prompt_for_session from a prompt artifact).&lt;/li>&#xA;&#x9;&lt;li>Switch from SESSION back to DEFAULT when the user finishes or cancels the session.&lt;/li>&#xA;&#x9;&lt;li>Ensure that contract changes are applied consistently across the Decision and Reasoning Core, Interactive Console, and Session State Store.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;p>.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0bce1bc1-30b8-45db-88c0-46602be954fc" name="Interact with User"
-              description="&lt;p>Display responses and collect prompts.&lt;/p>&#xA;"/>
+              description="&lt;p>Handle bidirectional interaction with the user, including chat messages, system notifications, and context prompts. Forward user input to the Decision and Reasoning Core according to the active contract (DEFAULT vs SESSION) and render the agent&amp;rsquo;s responses.&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="daa1721f-c774-45df-ba24-ea94ca4bcaf1" name="Request">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -3104,7 +3153,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c53072e8-3bce-41c4-9e55-e06a3a5ccbc9" name="Support Interface and Dialog Space"
-              description="&lt;p>Dialog using UI Widgets.&lt;/p>&#xA;">
+              description="&lt;p>Provide UI layouts and widgets (e.g., columns, tabs, text areas, buttons) to visualize artifacts, tool results, and conversational content. In Guided Session mode, present a multi-pane layout that surfaces:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Available prompt artifacts,&lt;/li>&#xA;&#x9;&lt;li>Optional attachments,&lt;/li>&#xA;&#x9;&lt;li>The active session transcript and controls.&lt;/li>&#xA;&lt;/ul>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e5a23416-a67f-4485-a982-b8749cbfbe0a" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -3128,7 +3177,7 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="4026a46b-41ff-4a91-9b3d-5a50ca7ebe9e" name="Support Session and Context State"
-              description="&lt;p>Support the creation of package that contains the set of artifacts available for reasoning.&lt;/p>&#xA;">
+              description="&lt;p>Persist and retrieve session and context information, including:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Session identifiers and active package,&lt;/li>&#xA;&#x9;&lt;li>Session seed text (from prompt artifacts),&lt;/li>&#xA;&#x9;&lt;li>Contract mode flags relevant to session operations.&lt;/li>&#xA;&#x9;&lt;li>Provide this state to Decision and Reasoning Core and Contract Manager as needed.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;p>.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="52b2d155-8895-4aec-8cb7-57735329d8e1" name="FIP 1"/>
           </ownedFunctions>
@@ -3167,6 +3216,39 @@
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="cc4b6442-918d-42db-87b7-78e05c8c1be5" name="FIP 1"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="def1457d-9c62-4e95-99e8-159ef702feb7" name="Present Guided Session Controls and Views"
+              description="&lt;p>Manage the specific UI affordances for Guided Sessions:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&amp;ldquo;Start Session from Prompt&amp;rdquo; action and attachment selection,&lt;/li>&#xA;&#x9;&lt;li>Display of session status (active / none / finished),&lt;/li>&#xA;&#x9;&lt;li>&amp;ldquo;Finish Session&amp;rdquo; and &amp;ldquo;Cancel Session&amp;rdquo; controls,&lt;/li>&#xA;&#x9;&lt;li>Visualization of the created summary artifact when the session concludes.&lt;/li>&#xA;&lt;/ul>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="ffff353d-ca2c-4dba-b3fe-1cb0facf1746" name="Facilitate Guided Session Turn"
+              description="&lt;p>When the contract is SESSION, interpret each user message as part of an ongoing Guided Session.&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Use the session seed (from the selected prompt artifact), current transcript, and any attached artifacts to generate a concise facilitator response.&lt;/li>&#xA;&#x9;&lt;li>Do not call tools in this mode; produce purely conversational guidance (questions, nudges, or next steps).&lt;/li>&#xA;&lt;/ul>&#xA;">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="bf591ca5-4bfd-43a9-b0a2-8f76a465cd0f" name="FIP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="12bc2fc3-2f1a-497e-82b8-f980a10c7490" name="Interpret Session Command"
+              description="&lt;p>Detect session-related commands embedded in user input (e.g., &amp;ldquo;finish&amp;rdquo;, &amp;ldquo;finish session&amp;rdquo;, &amp;ldquo;cancel&amp;rdquo;, &amp;ldquo;abort&amp;rdquo;) and trigger:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Session summarization via the Session State Store,&lt;/li>&#xA;&#x9;&lt;li>Contract change requests toward the Contract Manager (from SESSION back to DEFAULT),&lt;/li>&#xA;&#x9;&lt;li>Cleanup of session data when canceled or finished.&lt;/li>&#xA;&lt;/ul>&#xA;">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="7504bc3b-c8d4-4470-9069-697681f1b697" name="FIP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="c4d120f9-97d4-4dac-9651-9ed3c533927e" name="LogicalFunction 39"
+              kind="SPLIT">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="4d047a89-468e-4e75-99ac-3c49a483a8ff" name="FIP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="e4fcce9f-544b-4077-af0f-2012318ac723" name="FOP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="9d75d0ce-0cf3-470c-aeb4-87b6f4acce83" name="FOP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="401abea0-d3d0-4483-93ab-a3f6932d9c17" name="FOP 3"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="df029060-8e10-4016-b97e-f401d22e98ab" name="Evaluate Session Contract Triggers"
+              description="&lt;p>Monitor events and state related to sessions, including:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>Session creation from a prompt artifact,&lt;/li>&#xA;&#x9;&lt;li>Presence of a pending session identifier,&lt;/li>&#xA;&#x9;&lt;li>User-issued finish/cancel commands.&lt;/li>&#xA;&#x9;&lt;li>Decide when the conditions for entering/exiting SESSION are met and inform Manage Contract Transitions to perform the actual mode switch.&lt;/li>&#xA;&lt;/ul>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="9d82f6f4-7001-443f-a85c-41f82a608763" name="Record Session Summary Artifacts"
+              description="&lt;p>When a session is completed, record the linkage between:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>The session identifier and transcript,&lt;/li>&#xA;&#x9;&lt;li>The generated summary artifact (e.g., session_summary type). This enables later navigation from session history to its summary and supports replay or review features.&lt;/li>&#xA;&lt;/ul>&#xA;"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="8152178b-9a59-47b8-a698-7d97edb5c3b3" targetElement="#aab7188c-11d0-46c7-ab14-c9b9dc1f69c7"
               sourceElement="#23edbcd3-9252-4d3d-91de-bb7b1f2a1f37"/>
@@ -3392,7 +3474,7 @@
               id="0232faf0-7e04-456b-ab47-7ac3bcc14b78" name="Tool request" target="#6f78c09b-bb94-4499-b9ec-f69f9620312b"
               source="#386f2ee6-5033-4838-b151-05a003567279"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="74157790-dbed-4630-aeb4-f23e3046d23c" name="User Prompts" target="#4d047a89-468e-4e75-99ac-3c49a483a8ff"
+              id="74157790-dbed-4630-aeb4-f23e3046d23c" name="Request Response" target="#4d047a89-468e-4e75-99ac-3c49a483a8ff"
               source="#627ee185-cdbd-458d-aed2-b60f2c46e2a8"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="ea59474a-ccf6-4a34-bd02-33ecd8cbd253" name="Session Commands" target="#7adf76f9-13ac-48a3-8b12-bb7337041e4c"
@@ -3424,6 +3506,15 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="dad96612-4f47-4904-aced-877079878807" name="ToolInfo" target="#8e070fe6-ffbb-4b6b-8f31-33bf512840eb"
               source="#5bba0e85-d9b9-44b1-994d-47ff43578422"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="a17d4b65-4964-4c63-bc0e-f572b7c304b0" name="Request Response" target="#6fe0875d-f5b1-42b1-af4b-a66ce4e31e66"
+              source="#e4fcce9f-544b-4077-af0f-2012318ac723"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="65eeec16-f852-40fe-a755-959291678df3" name="Request Response" target="#bf591ca5-4bfd-43a9-b0a2-8f76a465cd0f"
+              source="#9d75d0ce-0cf3-470c-aeb4-87b6f4acce83"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ac026f27-864a-48a9-9e63-44860be322d4" name="Request Response" target="#7504bc3b-c8d4-4470-9069-697681f1b697"
+              source="#401abea0-d3d0-4483-93ab-a3f6932d9c17"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -3542,6 +3633,10 @@
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
             id="da554bc0-2f71-4b19-99d5-548f07e86509" name="index_reference" description="&lt;p>pointer back to the Artifact Registry entry&lt;/p>&#xA;"
             exchangeMechanism="SHARED_DATA"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="1c5dc1eb-9a2d-4ae2-abf1-eddeb111526a" name="contractmode" exchangeMechanism="SHARED_DATA"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="b7fadcd2-6a6d-484c-9f6f-15ea62e2f2a8" name="pending_session_id" exchangeMechanism="SHARED_DATA"/>
         <ownedAssociations xsi:type="org.polarsys.capella.core.data.information:Association"
             id="aef0e7c5-04fa-4ffa-9944-c41bc81e6ee3" name="DataAssociation1" navigableMembers="#15f5f0a5-3840-47ba-97e9-0682d8348999">
           <ownedMembers xsi:type="org.polarsys.capella.core.data.information:Property"
@@ -3613,6 +3708,12 @@
                 id="d546a6ef-d3a8-43cf-b97d-dcc26ae81f93" value="1"/>
           </ownedFeatures>
         </ownedClasses>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="ee9ea0e7-e1a7-4050-9999-7338f394970c" name="SessionRequested_Button"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="d39927ed-3f2b-405c-8720-7162f9d8e189" name="SessionFinished_Button"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="fb336ed2-5983-467f-a5b5-fc8f08370c43" name="SessionCancelled_Button"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="7e1cc8ae-7cf1-471c-9c92-22c006814135" name="Structure">
@@ -3788,7 +3889,7 @@
                 id="d4b3377b-301c-4308-bfad-6462a64e0591" name="User Prompts" source="#1fac035b-8aef-4f44-bf3f-802fe944fd33"
                 target="#485420a6-d142-4ccb-8764-831b2448c8cf" kind="FLOW">
               <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
-                  id="55d64a5d-b581-4cd2-bd6d-bf420756b5bd" targetElement="#74157790-dbed-4630-aeb4-f23e3046d23c"
+                  id="7b7f44aa-8b94-48d5-a26b-02b6f3f75b00" targetElement="#74157790-dbed-4630-aeb4-f23e3046d23c"
                   sourceElement="#d4b3377b-301c-4308-bfad-6462a64e0591"/>
             </ownedComponentExchanges>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -3845,7 +3946,7 @@
                 name="Session State Store" abstractType="#1cafc485-d5b5-4d2f-905d-a85a78f9733b"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8" name="Interactive Console"
-                description="&lt;p>Provides the interface between the System Engineer and the SE Agent.&lt;/p>&#xA;">
+                description="&lt;p>Provides the primary user interface for the Systems Engineering Agent.&lt;br />&#xA;It manages conversational interaction, visualization of artifacts, and now also supports Guided Session workflows&amp;mdash;allowing the user to start a session from a prompt artifact, review attached context, exchange messages with the agent, and conclude the session to create a summary artifact.&lt;/p>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="c1521181-ea4f-4d7a-acdd-84f114aa807a" targetElement="#0bce1bc1-30b8-45db-88c0-46602be954fc"
                   sourceElement="#0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8"/>
@@ -3857,6 +3958,9 @@
                   sourceElement="#0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8"/>
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="73101fe7-2853-4020-9f4e-7c5ecc5d1d5f" targetElement="#5750ac47-212d-4fd3-b773-78070ee55b73"
+                  sourceElement="#0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="4c84eee7-b429-459b-b525-d9d69a202719" targetElement="#def1457d-9c62-4e95-99e8-159ef702feb7"
                   sourceElement="#0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="69078d57-4098-4ceb-ad34-777c4a82115b" name="CP 3" orientation="IN"
@@ -3872,7 +3976,7 @@
                   id="1fac035b-8aef-4f44-bf3f-802fe944fd33" name="CP 4" orientation="OUT"
                   kind="FLOW">
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="f4bf45a7-6f6b-45b4-a6ba-123d6ec1a497" targetElement="#627ee185-cdbd-458d-aed2-b60f2c46e2a8"
+                    id="7258cb96-8944-499b-bf16-68bbf3dde3e1" targetElement="#627ee185-cdbd-458d-aed2-b60f2c46e2a8"
                     sourceElement="#1fac035b-8aef-4f44-bf3f-802fe944fd33"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
@@ -3888,18 +3992,27 @@
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="6d0cdb44-01c7-4022-b427-050322a8b1e9" name="Descision and Reasoning Core"
-                description="&lt;p>Coordinates reasoning contracts and evaluates input context to select appropriate tools or prompts.&lt;/p>&#xA;">
+                description="&lt;p>Implements the agent&amp;rsquo;s reasoning behavior, including inspection of artifacts, tool selection and orchestration, and contract-dependent response generation. In DEFAULT contract it behaves as a tool-aware Knowledge Partner; in SESSION contract it acts as a lightweight facilitator, driving turn-by-turn conversation without invoking tools and coordinating with the Session State Store and Contract Manager.&lt;/p>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="dd3afb87-4708-48cd-8eab-ffa05c59af1b" targetElement="#9329d019-ccc3-4b9a-811c-d7bbb546a181"
                   sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="4dc73028-d094-4a26-a48f-82ad5dc175bd" targetElement="#21ebb8ea-ddee-4fde-93d7-e356541f52fc"
                   sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="1f5e46fd-67ae-4956-a245-834551621158" targetElement="#ffff353d-ca2c-4dba-b3fe-1cb0facf1746"
+                  sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="ba53c979-5f15-499b-a4b2-388ff98deaa2" targetElement="#12bc2fc3-2f1a-497e-82b8-f980a10c7490"
+                  sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="90b19364-e0ad-435e-8edc-55f72c6b6685" targetElement="#c4d120f9-97d4-4dac-9651-9ed3c533927e"
+                  sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="485420a6-d142-4ccb-8764-831b2448c8cf" name="CP 2" orientation="IN"
                   kind="FLOW">
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="35e7e179-6409-4b02-b50b-f89c548f2f57" targetElement="#4d047a89-468e-4e75-99ac-3c49a483a8ff"
+                    id="d6973d2a-2dc5-40b8-820a-044629e10f83" targetElement="#4d047a89-468e-4e75-99ac-3c49a483a8ff"
                     sourceElement="#485420a6-d142-4ccb-8764-831b2448c8cf"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
@@ -4060,10 +4173,45 @@
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="e9d9ed2c-f2e7-4eff-9c0e-b01881b69544" name="Contract Manager"
-                description="&lt;p>Monitors reasoning state transitions and ensures contract integrity.&lt;/p>&#xA;">
+                description="&lt;p>Controls the active interaction contract for the agent (e.g., DEFAULT, SESSION). It interprets events and state from the Decision and Reasoning Core and Governance Layer to determine when to switch modes. In particular, it now manages transitions into and out of Guided Session mode when a session is started from a prompt artifact or concluded via user commands.&lt;/p>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="bb09d0a5-51cd-4de1-9662-9cf67d616f81" targetElement="#c19ed751-1744-4879-99fc-447c674a6ece"
                   sourceElement="#e9d9ed2c-f2e7-4eff-9c0e-b01881b69544"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="0af51594-2fd7-4ecd-9de9-a4b103f435b5" targetElement="#df029060-8e10-4016-b97e-f401d22e98ab"
+                  sourceElement="#e9d9ed2c-f2e7-4eff-9c0e-b01881b69544"/>
+              <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+                  id="d70ddf80-bc30-4e70-8891-6d746569bb35" name="StateMachine 1">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="222a8608-c46e-442c-aba4-230a8b248995" name="Default Region"
+                    involvedStates="#f607929f-cd49-44a8-8d20-df3750902721 #aa4e5b4b-7c1d-4759-899d-f6fc98c2856e #42f4bd1a-3ce4-499b-bfe9-0b11f44b0496">
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                      id="f607929f-cd49-44a8-8d20-df3750902721" name="Default">
+                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                        id="76b63aac-79de-422f-be1c-352dd826cadc" name="region"/>
+                  </ownedStates>
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
+                      id="aa4e5b4b-7c1d-4759-899d-f6fc98c2856e" name="Start"/>
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                      id="42f4bd1a-3ce4-499b-bfe9-0b11f44b0496" name="Session">
+                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                        id="e243e1b8-8bc5-49f3-b38c-343f38228790" name="region"/>
+                  </ownedStates>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="625bfcb5-683a-430c-8dd7-535cee591503" triggerDescription=""
+                      source="#aa4e5b4b-7c1d-4759-899d-f6fc98c2856e" target="#f607929f-cd49-44a8-8d20-df3750902721"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="e05656d6-551d-4fff-b57f-b08dd9041237" triggerDescription=""
+                      source="#f607929f-cd49-44a8-8d20-df3750902721" target="#42f4bd1a-3ce4-499b-bfe9-0b11f44b0496"
+                      effect="#df029060-8e10-4016-b97e-f401d22e98ab #1c5dc1eb-9a2d-4ae2-abf1-eddeb111526a #b7fadcd2-6a6d-484c-9f6f-15ea62e2f2a8"
+                      triggers="#ee9ea0e7-e1a7-4050-9999-7338f394970c"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="fedab0f3-5ffa-494e-a87c-65537270f682" triggerDescription=""
+                      source="#42f4bd1a-3ce4-499b-bfe9-0b11f44b0496" target="#f607929f-cd49-44a8-8d20-df3750902721"
+                      effect="#df029060-8e10-4016-b97e-f401d22e98ab #1c5dc1eb-9a2d-4ae2-abf1-eddeb111526a #b7fadcd2-6a6d-484c-9f6f-15ea62e2f2a8"
+                      triggers="#d39927ed-3f2b-405c-8720-7162f9d8e189 #fb336ed2-5983-467f-a5b5-fc8f08370c43"/>
+                </ownedRegions>
+              </ownedStateMachines>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="62164fd8-00ba-499a-9ebc-2c3439fa841b" name="CP 1" orientation="INOUT"
                   kind="FLOW"/>
@@ -4072,9 +4220,13 @@
                   kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="1cafc485-d5b5-4d2f-905d-a85a78f9733b" name="Session State Store">
+                id="1cafc485-d5b5-4d2f-905d-a85a78f9733b" name="Session State Store"
+                description="&lt;p>Maintains state related to interactive sessions and broader context.&lt;br />&#xA;For Guided Sessions, it stores:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>The selected prompt seed and attachments for the session,&lt;/li>&#xA;&#x9;&lt;li>The evolving session transcript (user and assistant turns),&lt;/li>&#xA;&#x9;&lt;li>References to artifacts created at session completion (e.g., session summary).&lt;/li>&#xA;&#x9;&lt;li>It supports synchronization with context memory and other components that need a persistent view of session and contract-related state.&amp;quot;&lt;/li>&#xA;&lt;/ul>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="062f9ab7-0a6e-4906-8430-261546dad758" targetElement="#4026a46b-41ff-4a91-9b3d-5a50ca7ebe9e"
+                  sourceElement="#1cafc485-d5b5-4d2f-905d-a85a78f9733b"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="9ec9818f-abde-41aa-b942-ac387bbd4949" targetElement="#9d82f6f4-7001-443f-a85c-41f82a608763"
                   sourceElement="#1cafc485-d5b5-4d2f-905d-a85a78f9733b"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="dc114135-fd3e-4c47-b050-c86ac441ccc3" name="CP 1" orientation="IN"
