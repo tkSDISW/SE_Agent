@@ -3928,6 +3928,12 @@
                   id="de2de3dd-2ec8-4056-9a35-50ba657e119f" targetElement="#5d662fd0-79c6-4ee4-9599-c5daa297a4c8"
                   sourceElement="#bb2e996f-8888-409d-a468-c62af8b86b4e"/>
             </ownedComponentExchanges>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="3fec06b8-72b9-4fcf-b221-5987c916fbde" name="Prompts" source="#8f698b70-4899-40b0-86ce-f2e6f96057f3"
+                target="#f8e2011c-8383-4c16-9e98-9763621dc4fd" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="84f54073-d7c5-49af-bd6f-53229b5875d8" name="Artifacts" source="#c6743451-7159-4841-804d-1f78bf77ac5f"
+                target="#6bf8954f-5664-4e3a-a606-3e8c70aab0c8" kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="40d2ebee-6055-42dc-8144-79f4a5ee92f5"
                 name="Interactive Console" abstractType="#0ab0e8f4-43eb-4208-be37-6ab9b1f3b3e8"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="33159bf1-62b1-47ef-86b5-f99dab191119"
@@ -3937,7 +3943,7 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="82011401-3474-4dcb-ad9c-dee4c0bd6f15"
                 name="Prompt Registry and Fomatter" abstractType="#27841793-490c-4f48-a7bf-d584515e1119"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7fc2d566-5d35-41f6-a90c-4139afa28b0f"
-                name="Context Memory and Trace Store" abstractType="#ef223c37-3fcb-4b90-9011-81c3089a6bad"/>
+                name="Artifact and Trace Store" abstractType="#ef223c37-3fcb-4b90-9011-81c3089a6bad"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="b0826c89-b119-4d1b-b12f-8ed66f447df1" name="CP 6" orientation="INOUT"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="31283863-70ef-4737-9e2e-78f5785caa79"
@@ -3992,7 +3998,7 @@
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="6d0cdb44-01c7-4022-b427-050322a8b1e9" name="Descision and Reasoning Core"
-                description="&lt;p>Implements the agent&amp;rsquo;s reasoning behavior, including inspection of artifacts, tool selection and orchestration, and contract-dependent response generation. In DEFAULT contract it behaves as a tool-aware Knowledge Partner; in SESSION contract it acts as a lightweight facilitator, driving turn-by-turn conversation without invoking tools and coordinating with the Session State Store and Contract Manager.&lt;/p>&#xA;">
+                description="&lt;p>Implements the agent&amp;rsquo;s reasoning behavior, including inspection of artifacts, tool selection and orchestration, and contract-dependent response generation. In DEFAULT contract it behaves as a tool-aware Knowledge Partner; in SESSION contract it acts as a lightweight facilitator, driving turn-by-turn conversation without invoking tools and coordinating with the Session State Store and Contract Manager.&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li data-end=&quot;1134&quot; data-start=&quot;1105&quot;>Conversation / Turn Manager&lt;/li>&#xA;&#x9;&lt;li data-end=&quot;1171&quot; data-start=&quot;1139&quot;>Prompt Manager / Mode Selector&lt;/li>&#xA;&#x9;&lt;li data-end=&quot;1205&quot; data-start=&quot;1176&quot;>Tool Orchestrator / Planner&lt;/li>&#xA;&#x9;&lt;li data-end=&quot;1270&quot; data-start=&quot;1210&quot;>&lt;strong data-end=&quot;1248&quot; data-start=&quot;1210&quot;>Workspace Memory (Working Context)&lt;/strong> &amp;larr; &lt;em data-end=&quot;1270&quot; data-start=&quot;1252&quot;>new explicit box&lt;/em>&lt;/li>&#xA;&lt;/ul>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="dd3afb87-4708-48cd-8eab-ffa05c59af1b" targetElement="#9329d019-ccc3-4b9a-811c-d7bbb546a181"
                   sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
@@ -4008,6 +4014,10 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="90b19364-e0ad-435e-8edc-55f72c6b6685" targetElement="#c4d120f9-97d4-4dac-9651-9ed3c533927e"
                   sourceElement="#6d0cdb44-01c7-4022-b427-050322a8b1e9"/>
+              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                  id="2c5ab926-eda9-4ecc-8d4e-547817e9097b" name="Workspace Memory"
+                  source="#b35e5fc6-ee4e-4082-9353-19b3df19be91" target="#8f3dc437-034a-4c23-8add-4afa3c38b3f4"
+                  kind="FLOW"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="485420a6-d142-4ccb-8764-831b2448c8cf" name="CP 2" orientation="IN"
                   kind="FLOW">
@@ -4037,6 +4047,29 @@
                     id="eb060e19-e39b-4b52-88b0-331b6d46dae9" targetElement="#59bd9108-fcc6-4c79-b06a-47952c4b6bf3"
                     sourceElement="#ad69b3ee-6104-4229-af9c-7b163eda9db5"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="262c3622-0620-4be3-a2dc-0f4422eeac6b"
+                  name="Workspace Memory" abstractType="#16a720da-b18e-4744-af2e-d331cc2b69b6"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c090b479-8e35-4569-b099-0b71cc141481"
+                  name="Conversation Manager" abstractType="#4aa04bb9-04e9-480c-a007-81d7a686738f"/>
+              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                  id="16a720da-b18e-4744-af2e-d331cc2b69b6" name="Workspace Memory">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="f8e2011c-8383-4c16-9e98-9763621dc4fd" name="CP 1" orientation="IN"
+                    kind="FLOW"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="6bf8954f-5664-4e3a-a606-3e8c70aab0c8" name="CP 2" orientation="IN"
+                    kind="FLOW"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="8f3dc437-034a-4c23-8add-4afa3c38b3f4" name="CP 3" orientation="INOUT"
+                    kind="FLOW"/>
+              </ownedLogicalComponents>
+              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                  id="4aa04bb9-04e9-480c-a007-81d7a686738f" name="Conversation Manager"
+                  description="&lt;ul>&#xA;&#x9;&lt;li data-end=&quot;311&quot; data-start=&quot;266&quot;>Receives user messages (from UI / channels)&lt;/li>&#xA;&#x9;&lt;li data-end=&quot;379&quot; data-start=&quot;316&quot;>Maintains dialog state (turns, topics, roles, current &amp;ldquo;task&amp;rdquo;)&lt;/li>&#xA;&#x9;&lt;li data-end=&quot;439&quot; data-start=&quot;384&quot;>Decides &lt;em data-end=&quot;398&quot; data-start=&quot;392&quot;>when&lt;/em> to hand off to tools vs pure reasoning&lt;/li>&#xA;&#x9;&lt;li>Writes key focus items into &lt;strong data-end=&quot;492&quot; data-start=&quot;472&quot;>Workspace Memory&lt;/strong> (e.g., &amp;ldquo;current component&amp;rdquo;, &amp;ldquo;chosen chain&amp;rdquo;)&lt;/li>&#xA;&lt;/ul>&#xA;">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="b35e5fc6-ee4e-4082-9353-19b3df19be91" name="CP 1" orientation="INOUT"
+                    kind="FLOW"/>
+              </ownedLogicalComponents>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="ac8d0760-5744-4177-8bb5-06aef27a58ff" name="Excecution Orchestrator"
@@ -4059,6 +4092,9 @@
                   name="Tool Invocation" abstractType="#03de2191-7b2a-42fd-b676-b7a9e571ec51"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="d8a95cf4-8b18-4661-9921-9f431e18d78c" name="CP 7" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="c6743451-7159-4841-804d-1f78bf77ac5f" name="CP 8" orientation="OUT"
                   kind="FLOW"/>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                   id="f2eab8dd-528d-4357-8e30-15f9e3c72529" name="Tool Registry" description="&lt;p>Describes available tools, capabilities, and compatibility with contracts.&lt;/p>&#xA;">
@@ -4133,9 +4169,12 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="9a554e8e-5f5b-4cb8-878c-0df2ea708648" name="CP 1" orientation="OUT"
                   kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="8f698b70-4899-40b0-86ce-f2e6f96057f3" name="CP 6" orientation="OUT"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="ef223c37-3fcb-4b90-9011-81c3089a6bad" name="Context Memory and Trace Store"
+                id="ef223c37-3fcb-4b90-9011-81c3089a6bad" name="Artifact and Trace Store"
                 description="&lt;p>Maintains state of artifacts, last tool used, and traces agent actions for replay and analysis.&lt;/p>&#xA;">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="611b481c-058c-49f6-8bc9-bbdd9889f7c0" targetElement="#ae7a0a2f-86e5-4906-8e96-ae8b3726bfa2"
