@@ -4013,7 +4013,7 @@
             id="cf718836-c4ad-45ed-8239-2136304a16d9" targetElement="#2ce2e9fa-b733-4751-b511-212e5c400588"
             sourceElement="#5e7bcc3b-b487-486b-ae69-cb4bfd2d4189"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="27290b81-86a5-4a74-8b36-1a7b04427da6"
-            name="SE Agent ECO System" abstractType="#e62ee8a1-3af5-48da-b881-a113fc9e1d86"/>
+            name="SE KP Agent ECO System" abstractType="#e62ee8a1-3af5-48da-b881-a113fc9e1d86"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="eb65c75b-035d-490e-ba59-b413f97f3741"
             name="System Engineer" abstractType="#35c4e4e3-15ab-4e5b-846a-6d70ee3db4e9"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="f8f2e043-305d-46b7-a8cc-25d713a1d7c0"
@@ -4028,6 +4028,8 @@
             name="File System" abstractType="#3b96f57e-ba1b-4450-af6e-a2afff1a80a1"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bba93807-7291-439e-ae59-0acb45c7fee1"
             name="Agents" abstractType="#507113a7-855c-4b0c-8022-4d8b76cf70d5"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="621047e7-77c5-406e-a438-8543018a5d2b"
+            name="MCP" abstractType="#a7746997-859c-47ff-8278-03b527dc6194"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="9f25ce6e-3f53-46ed-ba1b-c5e5e3d56416" name="User Interface" source="#50f80a50-8ece-4004-a448-4419a26c3beb"
             target="#69078d57-4098-4ceb-ad34-777c4a82115b" kind="FLOW">
@@ -4069,8 +4071,11 @@
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="dc0cba28-40a4-49e1-942c-f6b656405be4" name="Vector Store API" source="#5f506215-f70d-4055-a44e-b6fbc85395ba"
             target="#052d96cb-94c2-4931-b3b2-332d90cf15f2" kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="b534e7bb-3e97-4d50-81f6-38be240c7cd8" name="C 11" source="#6458d228-b2e0-4cee-84d6-4ca237c83628"
+            target="#d99ebdb9-7e7b-4121-ad99-68e385f85170" kind="FLOW"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="e62ee8a1-3af5-48da-b881-a113fc9e1d86" name="SE Agent ECO System">
+            id="e62ee8a1-3af5-48da-b881-a113fc9e1d86" name="SE KP Agent ECO System">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="d35a9d0e-8e1b-4eb2-b2f5-19866ea780c4" targetElement="#8997ac8f-70fb-4c6d-a13c-7042b45fab2e"
               sourceElement="#e62ee8a1-3af5-48da-b881-a113fc9e1d86"/>
@@ -4704,6 +4709,9 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="5e807918-83bb-47a1-aa46-17c331a90122" name="CP 10" orientation="IN"
                 kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="6458d228-b2e0-4cee-84d6-4ca237c83628" name="Capability" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="15907346-bb98-47ac-9eea-c441f92b6adf" name="Prompt Library">
@@ -4912,6 +4920,12 @@
             id="507113a7-855c-4b0c-8022-4d8b76cf70d5" name="Agents" actor="true">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
               id="98538e6b-d484-4bc2-b959-243598a93d76" name="CP 1" orientation="IN"
+              kind="FLOW"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="a7746997-859c-47ff-8278-03b527dc6194" name="MCP" actor="true">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="d99ebdb9-7e7b-4121-ad99-68e385f85170" name="CP 1" orientation="IN"
               kind="FLOW"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
