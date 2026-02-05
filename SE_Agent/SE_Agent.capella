@@ -3032,7 +3032,7 @@
                 id="59bd9108-fcc6-4c79-b06a-47952c4b6bf3" name="FOP 2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="aaf48eff-e75f-43e6-99a6-f6f8ac787244" name="Invoke Tool" description="&lt;p>Invokes the tool requested.&lt;/p>&#xA;&#xA;&lt;p>Transforms workspace state and artifact content into a standardized IO schema representation (or vice versa), ensuring consistent structure for saving, loading, and tool-level processing.&lt;/p>&#xA;">
+              id="aaf48eff-e75f-43e6-99a6-f6f8ac787244" name="Invoke Tool" description="&lt;p>Invokes the tool requested.&lt;/p>&#xA;&#xA;&lt;p>Transforms workspace state and artifact content into a standardized IO schema representation (or vice versa), ensuring consistent structure for saving, loading, and tool-level processing.&lt;/p>&#xA;&#xA;&lt;p>Use Just In Time conversion of artifact ids.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="a85bfbdd-08ef-41bd-a704-a49724e5c02b" name="FIP 1"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -4029,7 +4029,13 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bba93807-7291-439e-ae59-0acb45c7fee1"
             name="Agents" abstractType="#507113a7-855c-4b0c-8022-4d8b76cf70d5"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="621047e7-77c5-406e-a438-8543018a5d2b"
-            name="MCP" abstractType="#a7746997-859c-47ff-8278-03b527dc6194"/>
+            name="Managed Capability Provider (MCP)" abstractType="#a7746997-859c-47ff-8278-03b527dc6194"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="b2976061-bd39-4115-9230-996bef6f0849"
+            name="Polarion" abstractType="#22456cc4-dbb3-4f60-942d-1efa8d440798"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="99850e4a-df71-43e8-98e9-0febed92b2fa"
+            name="Teamcenter" abstractType="#8041da47-1a7d-4378-b726-09d77ec19901"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="afeda2ee-5531-41bf-87b6-fee36083a649"
+            name="SysML V2 Repo" abstractType="#fd7d1c9e-1e03-49d4-97fd-6901a12aea62"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="9f25ce6e-3f53-46ed-ba1b-c5e5e3d56416" name="User Interface" source="#50f80a50-8ece-4004-a448-4419a26c3beb"
             target="#69078d57-4098-4ceb-ad34-777c4a82115b" kind="FLOW">
@@ -4074,6 +4080,15 @@
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="b534e7bb-3e97-4d50-81f6-38be240c7cd8" name="C 11" source="#6458d228-b2e0-4cee-84d6-4ca237c83628"
             target="#d99ebdb9-7e7b-4121-ad99-68e385f85170" kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="96be599b-26be-4ec6-b145-cdf548a4db0b" name="C 12" source="#d27fb753-7f1f-4a4c-9241-9e480550e5a0"
+            target="#79646f00-4828-4d79-a1c7-9146ad96d309" kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="1acd6e0d-f930-4c20-9c9d-c789db2c703d" name="C 13" source="#e3cfe6f6-ecef-49fc-82b3-74fcfcc86b91"
+            target="#b02ad8a8-deec-474c-8cdf-014019226e95" kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="b67424c5-e44d-496f-8b1f-017cd2926cc5" name="C 14" source="#70c005b4-a11d-4ad0-930e-c4d5c528b4ea"
+            target="#9333b2f3-7d32-43a4-99ac-3aef280be2ca" kind="FLOW"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="e62ee8a1-3af5-48da-b881-a113fc9e1d86" name="SE KP Agent ECO System">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -4158,6 +4173,9 @@
               name="Tool Library" abstractType="#c9379299-9009-4c43-92d7-aa2eb5e32426"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a15d5f83-5cec-4633-8b51-6b4428231232"
               name="Prompt Library" abstractType="#15907346-bb98-47ac-9eea-c441f92b6adf"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="6458d228-b2e0-4cee-84d6-4ca237c83628" name="Capability" orientation="OUT"
+              kind="FLOW"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="20bd2c58-ebd6-44f8-b9e1-e58042643c11" targetElement="#0ca84677-2a0f-49aa-9463-44edccd21bcb"
               sourceElement="#e62ee8a1-3af5-48da-b881-a113fc9e1d86"/>
@@ -4551,9 +4569,35 @@
                     id="222a8608-c46e-442c-aba4-230a8b248995" name="Default Region"
                     involvedStates="#f607929f-cd49-44a8-8d20-df3750902721 #aa4e5b4b-7c1d-4759-899d-f6fc98c2856e #42f4bd1a-3ce4-499b-bfe9-0b11f44b0496">
                   <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="f607929f-cd49-44a8-8d20-df3750902721" name="Default">
+                      id="f607929f-cd49-44a8-8d20-df3750902721" name="Default" referencedStates="#e8a2f455-47b0-405f-a05a-7f4da2e49935 #7001778c-6959-40f0-a17b-0540062705d0 #633a3dbf-6129-4d01-ad51-0ebc92cdd13c #cd0ebcb1-ac4b-45f0-847b-caea33fd12c2 #88a3875d-f54d-4dec-8162-8c1845e51191">
                     <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="76b63aac-79de-422f-be1c-352dd826cadc" name="region"/>
+                        id="76b63aac-79de-422f-be1c-352dd826cadc" name="region" involvedStates="#e8a2f455-47b0-405f-a05a-7f4da2e49935 #7001778c-6959-40f0-a17b-0540062705d0 #633a3dbf-6129-4d01-ad51-0ebc92cdd13c #cd0ebcb1-ac4b-45f0-847b-caea33fd12c2 #88a3875d-f54d-4dec-8162-8c1845e51191">
+                      <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                          id="e8a2f455-47b0-405f-a05a-7f4da2e49935" name="Requirements">
+                        <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                            id="cb3980ee-f58c-4d08-b59f-561dc2e41c2a" name="region"/>
+                      </ownedStates>
+                      <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                          id="7001778c-6959-40f0-a17b-0540062705d0" name="Architecture">
+                        <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                            id="cc85408f-feaf-45d5-aabd-00f461bb4cdc" name="region"/>
+                      </ownedStates>
+                      <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                          id="633a3dbf-6129-4d01-ad51-0ebc92cdd13c" name="Risk Management ">
+                        <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                            id="8f0c64b2-dd09-4727-a590-f92accbdef73" name="region"/>
+                      </ownedStates>
+                      <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                          id="cd0ebcb1-ac4b-45f0-847b-caea33fd12c2" name="Simulation">
+                        <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                            id="9e3e45c4-cacb-4d6b-b947-ab195380d881" name="region"/>
+                      </ownedStates>
+                      <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                          id="88a3875d-f54d-4dec-8162-8c1845e51191" name="Project Management">
+                        <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                            id="d31090e5-b6f1-4224-bfe6-7510f701d3ca" name="region"/>
+                      </ownedStates>
+                    </ownedRegions>
                   </ownedStates>
                   <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
                       id="aa4e5b4b-7c1d-4759-899d-f6fc98c2856e" name="Start"/>
@@ -4708,9 +4752,6 @@
                 kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="5e807918-83bb-47a1-aa46-17c331a90122" name="CP 10" orientation="IN"
-                kind="FLOW"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="6458d228-b2e0-4cee-84d6-4ca237c83628" name="Capability" orientation="OUT"
                 kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -4923,9 +4964,53 @@
               kind="FLOW"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="a7746997-859c-47ff-8278-03b527dc6194" name="MCP" actor="true">
+            id="a7746997-859c-47ff-8278-03b527dc6194" name="Managed Capability Provider (MCP)"
+            actor="true">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8f42aab3-dd34-44cc-af06-2b2e2f57bf7f"
+              name="Polarion MCP" abstractType="#2be4e2a9-7653-4021-90f8-9d0d46361dba"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="771a00dd-7a4f-4d0c-a828-568736f66787"
+              name="Teamcenter MCP" abstractType="#103baf51-306b-467f-bb8f-274c4d0b05fd"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f94de623-76a5-4f87-8a3d-062a3a90cfa7"
+              name="SysML V2 Repor MCP" abstractType="#2318733d-5b3e-4abd-a45b-840563573deb"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="2be4e2a9-7653-4021-90f8-9d0d46361dba" name="Polarion MCP" actor="true">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="d27fb753-7f1f-4a4c-9241-9e480550e5a0" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="d99ebdb9-7e7b-4121-ad99-68e385f85170" name="CP 1" orientation="IN"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="103baf51-306b-467f-bb8f-274c4d0b05fd" name="Teamcenter MCP" actor="true">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="e3cfe6f6-ecef-49fc-82b3-74fcfcc86b91" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="2318733d-5b3e-4abd-a45b-840563573deb" name="SysML V2 Repor MCP"
+              actor="true">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="70c005b4-a11d-4ad0-930e-c4d5c528b4ea" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="22456cc4-dbb3-4f60-942d-1efa8d440798" name="Polarion" actor="true">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="d99ebdb9-7e7b-4121-ad99-68e385f85170" name="CP 1" orientation="IN"
+              id="79646f00-4828-4d79-a1c7-9146ad96d309" name="CP 1" orientation="IN"
+              kind="FLOW"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="8041da47-1a7d-4378-b726-09d77ec19901" name="Teamcenter" actor="true">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="b02ad8a8-deec-474c-8cdf-014019226e95" name="CP 1" orientation="IN"
+              kind="FLOW"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="fd7d1c9e-1e03-49d4-97fd-6901a12aea62" name="SysML V2 Repo" actor="true">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="9333b2f3-7d32-43a4-99ac-3aef280be2ca" name="CP 1" orientation="IN"
               kind="FLOW"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
