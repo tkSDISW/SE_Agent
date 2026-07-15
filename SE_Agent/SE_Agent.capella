@@ -3598,7 +3598,53 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="5537041d-020b-4869-94a5-843711c6a705" name="Manage Work Space"/>
+              id="5537041d-020b-4869-94a5-843711c6a705" name="Manage Work Space">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="287dfff0-a9af-4ef8-91f3-ef9d596a7b1f" description="Start a session (pass api_key). Never point at the Capella model repo."
+                name="Create Workspace Session"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="f2085e91-ec98-417b-be54-967bcbc93ab5" description="Standard CRUD on main branch"
+                name="List Artifact Packages"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3d9c9c56-da07-4a4c-98a4-469f6f468587" description="Standard CRUD on main branch"
+                name="Browse Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="d1cb66e5-12f8-482d-b480-b2ee82d2e070" description="Standard CRUD on main branch"
+                name="Read Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="97ad6470-ec93-421a-b36d-99d0fa36f7f7" description="Standard CRUD on main branch"
+                name="Write Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="4fee03d6-a66e-48ac-8acd-d77365665fd4" description="Standard CRUD on main branch"
+                name="Delete Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="cbdd6bff-5d52-4fde-8fa8-ce3842b76963" description="Standard CRUD on main branch"
+                name="Search Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="05a9a92a-32af-4c62-890d-c7714dd334c8" description="Standard CRUD on main branch"
+                name="Push Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="a30c8fcf-ad6c-4551-9ec8-7695d7966559" description="Create a workspace for a routine execution. Defaults to mode=folder (outputs at workspace/&lt;routine_id>/&lt;date>/ on the current branch — no branch created). Pass mode=branch for long-running/failure-prone routines or team routines needing write isolation — creates workspace/&lt;routine_id>-&lt;date> instead.&lt;/date>&lt;/routine_id>&lt;/date>&lt;/routine_id>"
+                name="Create Workspace"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="052a695d-90c3-4c6c-98a1-08d585dc6f7b" description="Write a typed artifact into the workspace (folder or branch), committed immediately. Takes workspace_id — either {routine_id}/{date} for folder mode or workspace/{routine_id}-{date} for branch mode."
+                name="Write Workspace Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="e301fb72-49c8-424e-966f-7ce188770d10" description="Read one workspace output (promotion primitive) — never disrupts the session&amp;#x27;s current branch either way."
+                name="Read Workspace Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="eeeb0cb4-74a6-4c68-a3bd-a0a631690191" description="Inspect active workspaces; each result is tagged mode: folder or branch."
+                name="List Workspaces"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="48568d37-7db8-46e4-8612-4f665e006b13" description="Inspect active workspaces; each result is tagged mode: folder or branch."
+                name="Get Workspace Status"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="e1247838-df97-474b-a900-aa26198f3858" description="Set status to complete (folder mode: in place, no branch involved; branch mode: branch stays on remote)"
+                name="Close Workspace"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="43f8c11f-7b5d-4531-aa65-95e5e8d1d6d8" description="Release server resources when done"
+                name="Cleanup Session"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="8152178b-9a59-47b8-a698-7d97edb5c3b3" targetElement="#aab7188c-11d0-46c7-ab14-c9b9dc1f69c7"
               sourceElement="#23edbcd3-9252-4d3d-91de-bb7b1f2a1f37"/>
