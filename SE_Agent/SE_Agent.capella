@@ -3544,6 +3544,12 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0492196d-a1c2-4c43-ab74-cf3769ff9f6a" name="XNI to SysMK V2"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="842c35a8-7023-467a-9caf-20e5867f6aac" name="Manage Knowledge Repo"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="5537041d-020b-4869-94a5-843711c6a705" name="Manage Work Space"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="8152178b-9a59-47b8-a698-7d97edb5c3b3" targetElement="#aab7188c-11d0-46c7-ab14-c9b9dc1f69c7"
               sourceElement="#23edbcd3-9252-4d3d-91de-bb7b1f2a1f37"/>
