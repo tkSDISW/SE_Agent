@@ -3545,7 +3545,56 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0492196d-a1c2-4c43-ab74-cf3769ff9f6a" name="XNI to SysMK V2"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="842c35a8-7023-467a-9caf-20e5867f6aac" name="Manage Knowledge Repo"/>
+              id="842c35a8-7023-467a-9caf-20e5867f6aac" name="Manage Knowledge Repo">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="f9ad5a43-2510-4cdb-a858-5dfed7455f3a" description="Start a session (pass api_key)"
+                name="Clone Knowledge Repo"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="f203d17f-d7e8-4105-8b64-c2590e0f97ba" description="List packages"
+                name="List Artifact Packages"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="2243975b-6550-4cce-a75c-ba608ec2b51a" description="Browse entry metadata in a package"
+                name="Browse Knowledge Repo"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="fa8e934d-f39e-421f-92bc-7f8d8611c9c0" description="Read one entry by id"
+                name="Read Artifact / Read Entry"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="f01dbfdb-fa8f-4e51-aad4-beed670d8bc4" description="Write a new entry (milestone, observation, decision, issue, note, lesson_learned). Pass author when known. Pass artifact_refs to cite related entries or workspace artifacts. Pass entry_id to revise an existing entry in place instead of creating a new one — each revision is its own git commit, so full history is preserved and viewable via get_artifact_versions or the viewer&amp;#x27;s Version history link."
+                name="Add Log Entry"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="a8e3b331-9513-4ac1-8d47-406968360c70" description="Create/overwrite; used mainly for a routine&amp;#x27;s YAML (stored as type routine_def)"
+                name="Write Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="23e63c4c-b846-42aa-bbee-4d74207e845d" description="Assemble all entries newest-first (optionally filtered by type)"
+                name="Render Log Book"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3e3b7e5c-89cb-4121-8a27-f40dd4e30465" description="Search entry titles"
+                name="Search Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="c456a87f-16d3-4fe1-a047-312edc00cdbb" description="Git commit history for an entry"
+                name="Get Artifact Versions"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="727faee2-8f56-4759-b877-a24151d8d588" description="Push to main"
+                name="Push Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3d65cfe7-e912-4f36-95db-1a14f6684583" description="Delete an entry"
+                name="Delete Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="0485bf1b-cc24-4be3-b530-2a75b18d625f" description="List all routines (stored internally as routine_def entries)"
+                name="List Routines"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="6d6d0cc8-ea60-4366-96c9-1ef63671cee9" description="Validate a routine&amp;#x27;s schema"
+                name="Validate Routine Def"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="06422746-9ecb-4948-b337-c806283ab427" description="Dry-run Jinja2 template rendering"
+                name="Render Routine Prompt"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="0bc47df6-429c-45bc-9a4a-dae872fe8362" description="Generate a signed JWT deep link for the Cartenza viewer (30-min expiry). Call after add_log_entry or write_artifact to give the engineer a tappable link. Requires api_key at clone time."
+                name="Generate Viewer Link"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="8b46ccac-0832-405e-af6d-9274966e0535" description="Release server resources when done"
+                name="Cleanup Session"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
