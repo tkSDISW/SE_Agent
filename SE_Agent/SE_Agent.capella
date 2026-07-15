@@ -3547,134 +3547,114 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="842c35a8-7023-467a-9caf-20e5867f6aac" name="Manage Knowledge Repo">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="f9ad5a43-2510-4cdb-a858-5dfed7455f3a" description="Start a session (pass api_key)"
-                name="Clone Knowledge Repo"/>
+                id="f9ad5a43-2510-4cdb-a858-5dfed7455f3a" name="Clone Knowledge Repo"
+                description="Start a session (pass api_key)"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="f203d17f-d7e8-4105-8b64-c2590e0f97ba" description="List packages"
-                name="List Artifact Packages"/>
+                id="f203d17f-d7e8-4105-8b64-c2590e0f97ba" name="List Artifact Packages"
+                description="List packages"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="2243975b-6550-4cce-a75c-ba608ec2b51a" description="Browse entry metadata in a package"
-                name="Browse Knowledge Repo"/>
+                id="2243975b-6550-4cce-a75c-ba608ec2b51a" name="Browse Knowledge Repo"
+                description="Browse entry metadata in a package"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="fa8e934d-f39e-421f-92bc-7f8d8611c9c0" description="Read one entry by id"
-                name="Read Artifact / Read Entry"/>
+                id="fa8e934d-f39e-421f-92bc-7f8d8611c9c0" name="Read Artifact / Read Entry"
+                description="Read one entry by id"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="f01dbfdb-fa8f-4e51-aad4-beed670d8bc4" description="Write a new entry (milestone, observation, decision, issue, note, lesson_learned). Pass author when known. Pass artifact_refs to cite related entries or workspace artifacts. Pass entry_id to revise an existing entry in place instead of creating a new one — each revision is its own git commit, so full history is preserved and viewable via get_artifact_versions or the viewer&amp;#x27;s Version history link."
-                name="Add Log Entry"/>
+                id="f01dbfdb-fa8f-4e51-aad4-beed670d8bc4" name="Add Log Entry" description="&lt;p>Write a new entry (milestone, observation, decision, issue, note, lesson_learned). Pass author when known. Pass artifact_refs to cite related entries or workspace artifacts. Pass entry_id to revise an existing entry in place instead of creating a new one &amp;mdash; each revision is its own git commit, so full history is preserved and viewable via get_artifact_versions or the viewer&amp;#39;s Version history link.&lt;/p>&#xA;"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="a8e3b331-9513-4ac1-8d47-406968360c70" description="Create/overwrite; used mainly for a routine&amp;#x27;s YAML (stored as type routine_def)"
-                name="Write Artifact"/>
+                id="a8e3b331-9513-4ac1-8d47-406968360c70" name="Write Artifact" description="Create/overwrite; used mainly for a routine&amp;#x27;s YAML (stored as type routine_def)"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="23e63c4c-b846-42aa-bbee-4d74207e845d" description="Assemble all entries newest-first (optionally filtered by type)"
-                name="Render Log Book"/>
+                id="23e63c4c-b846-42aa-bbee-4d74207e845d" name="Render Log Book" description="Assemble all entries newest-first (optionally filtered by type)"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3e3b7e5c-89cb-4121-8a27-f40dd4e30465" description="Search entry titles"
-                name="Search Artifacts"/>
+                id="3e3b7e5c-89cb-4121-8a27-f40dd4e30465" name="Search Artifacts"
+                description="Search entry titles"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="c456a87f-16d3-4fe1-a047-312edc00cdbb" description="Git commit history for an entry"
-                name="Get Artifact Versions"/>
+                id="c456a87f-16d3-4fe1-a047-312edc00cdbb" name="Get Artifact Versions"
+                description="Git commit history for an entry"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="727faee2-8f56-4759-b877-a24151d8d588" description="Push to main"
-                name="Push Artifacts"/>
+                id="727faee2-8f56-4759-b877-a24151d8d588" name="Push Artifacts" description="Push to main"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3d65cfe7-e912-4f36-95db-1a14f6684583" description="Delete an entry"
-                name="Delete Artifact"/>
+                id="3d65cfe7-e912-4f36-95db-1a14f6684583" name="Delete Artifact" description="Delete an entry"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="0485bf1b-cc24-4be3-b530-2a75b18d625f" description="List all routines (stored internally as routine_def entries)"
-                name="List Routines"/>
+                id="0485bf1b-cc24-4be3-b530-2a75b18d625f" name="List Routines" description="List all routines (stored internally as routine_def entries)"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="6d6d0cc8-ea60-4366-96c9-1ef63671cee9" description="Validate a routine&amp;#x27;s schema"
-                name="Validate Routine Def"/>
+                id="6d6d0cc8-ea60-4366-96c9-1ef63671cee9" name="Validate Routine Def"
+                description="Validate a routine&amp;#x27;s schema"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="06422746-9ecb-4948-b337-c806283ab427" description="Dry-run Jinja2 template rendering"
-                name="Render Routine Prompt"/>
+                id="06422746-9ecb-4948-b337-c806283ab427" name="Render Routine Prompt"
+                description="Dry-run Jinja2 template rendering"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="0bc47df6-429c-45bc-9a4a-dae872fe8362" description="Generate a signed JWT deep link for the Cartenza viewer (30-min expiry). Call after add_log_entry or write_artifact to give the engineer a tappable link. Requires api_key at clone time."
-                name="Generate Viewer Link"/>
+                id="0bc47df6-429c-45bc-9a4a-dae872fe8362" name="Generate Viewer Link"
+                description="Generate a signed JWT deep link for the Cartenza viewer (30-min expiry). Call after add_log_entry or write_artifact to give the engineer a tappable link. Requires api_key at clone time."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="8b46ccac-0832-405e-af6d-9274966e0535" description="Release server resources when done"
-                name="Cleanup Session"/>
+                id="8b46ccac-0832-405e-af6d-9274966e0535" name="Cleanup Session" description="Release server resources when done"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="63907343-d564-4b83-9ea3-1536c962c3ab" description="Clone a git repository and start a session (pass api_key). Landing point for promoted workspace outputs (FMEA, Pugh matrices, trade studies, requirements analyses). Never point at the Capella model repo."
-                name="Create Session"/>
+                id="63907343-d564-4b83-9ea3-1536c962c3ab" name="Create Session" description="Clone a git repository and start a session (pass api_key). Landing point for promoted workspace outputs (FMEA, Pugh matrices, trade studies, requirements analyses). Never point at the Capella model repo."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="6377695a-0907-4362-877a-73d095c9b4e2" description="Standard CRUD on main branch"
-                name="List Artifact Packages"/>
+                id="6377695a-0907-4362-877a-73d095c9b4e2" name="List Artifact Packages"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="818ce9f4-dc12-4c99-809f-d712c785279f" description="Standard CRUD on main branch"
-                name="Browse Artifacts"/>
+                id="818ce9f4-dc12-4c99-809f-d712c785279f" name="Browse Artifacts"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="9e1e3a5d-caa5-4ea8-a90f-e68bbdcdc315" description="Standard CRUD on main branch"
-                name="Read Artifact"/>
+                id="9e1e3a5d-caa5-4ea8-a90f-e68bbdcdc315" name="Read Artifact" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="ad22ebed-7cfa-4399-b7e7-80f283e6e0d3" description="Promotion pattern step 2: project-artifact-repo.write_artifact(package, type, name, content_str) places the content read from a workspace output (step 1: workspace-manager.read_workspace_artifact). This is the promotion landing point."
-                name="Write Artifact"/>
+                id="ad22ebed-7cfa-4399-b7e7-80f283e6e0d3" name="Write Artifact" description="Promotion pattern step 2: project-artifact-repo.write_artifact(package, type, name, content_str) places the content read from a workspace output (step 1: workspace-manager.read_workspace_artifact). This is the promotion landing point."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="94eacd07-680e-4336-929f-9710fbc72634" description="Standard CRUD on main branch"
-                name="Delete Artifact"/>
+                id="94eacd07-680e-4336-929f-9710fbc72634" name="Delete Artifact" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="41a4d648-7ad3-48a8-98a9-0390e6519d19" description="Standard CRUD on main branch"
-                name="Search Artifacts"/>
+                id="41a4d648-7ad3-48a8-98a9-0390e6519d19" name="Search Artifacts"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="6745f614-c94c-407a-b8bf-65a23b31781f" description="Git commit history for an artifact"
-                name="Get Artifact Versions"/>
+                id="6745f614-c94c-407a-b8bf-65a23b31781f" name="Get Artifact Versions"
+                description="Git commit history for an artifact"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3776ba30-96c0-4d21-8578-82e8dd190d34" description="Standard CRUD on main branch"
-                name="Push Artifacts"/>
+                id="3776ba30-96c0-4d21-8578-82e8dd190d34" name="Push Artifacts" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3875f9f1-6831-4012-b77f-2f8ad1320c12" description="Release server resources when done"
-                name="Cleanup Session"/>
+                id="3875f9f1-6831-4012-b77f-2f8ad1320c12" name="Cleanup Session" description="Release server resources when done"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="5537041d-020b-4869-94a5-843711c6a705" name="Manage Work Space">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="287dfff0-a9af-4ef8-91f3-ef9d596a7b1f" description="Start a session (pass api_key). Never point at the Capella model repo."
-                name="Create Workspace Session"/>
+                id="287dfff0-a9af-4ef8-91f3-ef9d596a7b1f" name="Create Workspace Session"
+                description="Start a session (pass api_key). Never point at the Capella model repo."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="f2085e91-ec98-417b-be54-967bcbc93ab5" description="Standard CRUD on main branch"
-                name="List Artifact Packages"/>
+                id="f2085e91-ec98-417b-be54-967bcbc93ab5" name="List Artifact Packages"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3d9c9c56-da07-4a4c-98a4-469f6f468587" description="Standard CRUD on main branch"
-                name="Browse Artifacts"/>
+                id="3d9c9c56-da07-4a4c-98a4-469f6f468587" name="Browse Artifacts"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="d1cb66e5-12f8-482d-b480-b2ee82d2e070" description="Standard CRUD on main branch"
-                name="Read Artifact"/>
+                id="d1cb66e5-12f8-482d-b480-b2ee82d2e070" name="Read Artifact" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="97ad6470-ec93-421a-b36d-99d0fa36f7f7" description="Standard CRUD on main branch"
-                name="Write Artifact"/>
+                id="97ad6470-ec93-421a-b36d-99d0fa36f7f7" name="Write Artifact" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="4fee03d6-a66e-48ac-8acd-d77365665fd4" description="Standard CRUD on main branch"
-                name="Delete Artifact"/>
+                id="4fee03d6-a66e-48ac-8acd-d77365665fd4" name="Delete Artifact" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="cbdd6bff-5d52-4fde-8fa8-ce3842b76963" description="Standard CRUD on main branch"
-                name="Search Artifacts"/>
+                id="cbdd6bff-5d52-4fde-8fa8-ce3842b76963" name="Search Artifacts"
+                description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="05a9a92a-32af-4c62-890d-c7714dd334c8" description="Standard CRUD on main branch"
-                name="Push Artifacts"/>
+                id="05a9a92a-32af-4c62-890d-c7714dd334c8" name="Push Artifacts" description="Standard CRUD on main branch"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="a30c8fcf-ad6c-4551-9ec8-7695d7966559" description="Create a workspace for a routine execution. Defaults to mode=folder (outputs at workspace/&lt;routine_id>/&lt;date>/ on the current branch — no branch created). Pass mode=branch for long-running/failure-prone routines or team routines needing write isolation — creates workspace/&lt;routine_id>-&lt;date> instead.&lt;/date>&lt;/routine_id>&lt;/date>&lt;/routine_id>"
-                name="Create Workspace"/>
+                id="a30c8fcf-ad6c-4551-9ec8-7695d7966559" name="Create Workspace"
+                description="Create a workspace for a routine execution. Defaults to mode=folder (outputs at workspace/&lt;routine_id>/&lt;date>/ on the current branch — no branch created). Pass mode=branch for long-running/failure-prone routines or team routines needing write isolation — creates workspace/&lt;routine_id>-&lt;date> instead.&lt;/date>&lt;/routine_id>&lt;/date>&lt;/routine_id>"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="052a695d-90c3-4c6c-98a1-08d585dc6f7b" description="Write a typed artifact into the workspace (folder or branch), committed immediately. Takes workspace_id — either {routine_id}/{date} for folder mode or workspace/{routine_id}-{date} for branch mode."
-                name="Write Workspace Artifact"/>
+                id="052a695d-90c3-4c6c-98a1-08d585dc6f7b" name="Write Workspace Artifact"
+                description="Write a typed artifact into the workspace (folder or branch), committed immediately. Takes workspace_id — either {routine_id}/{date} for folder mode or workspace/{routine_id}-{date} for branch mode."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="e301fb72-49c8-424e-966f-7ce188770d10" description="Read one workspace output (promotion primitive) — never disrupts the session&amp;#x27;s current branch either way."
-                name="Read Workspace Artifact"/>
+                id="e301fb72-49c8-424e-966f-7ce188770d10" name="Read Workspace Artifact"
+                description="Read one workspace output (promotion primitive) — never disrupts the session&amp;#x27;s current branch either way."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="eeeb0cb4-74a6-4c68-a3bd-a0a631690191" description="Inspect active workspaces; each result is tagged mode: folder or branch."
-                name="List Workspaces"/>
+                id="eeeb0cb4-74a6-4c68-a3bd-a0a631690191" name="List Workspaces" description="Inspect active workspaces; each result is tagged mode: folder or branch."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="48568d37-7db8-46e4-8612-4f665e006b13" description="Inspect active workspaces; each result is tagged mode: folder or branch."
-                name="Get Workspace Status"/>
+                id="48568d37-7db8-46e4-8612-4f665e006b13" name="Get Workspace Status"
+                description="Inspect active workspaces; each result is tagged mode: folder or branch."/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="e1247838-df97-474b-a900-aa26198f3858" description="Set status to complete (folder mode: in place, no branch involved; branch mode: branch stays on remote)"
-                name="Close Workspace"/>
+                id="e1247838-df97-474b-a900-aa26198f3858" name="Close Workspace" description="Set status to complete (folder mode: in place, no branch involved; branch mode: branch stays on remote)"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="43f8c11f-7b5d-4531-aa65-95e5e8d1d6d8" description="Release server resources when done"
-                name="Cleanup Session"/>
+                id="43f8c11f-7b5d-4531-aa65-95e5e8d1d6d8" name="Cleanup Session" description="Release server resources when done"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="8152178b-9a59-47b8-a698-7d97edb5c3b3" targetElement="#aab7188c-11d0-46c7-ab14-c9b9dc1f69c7"
@@ -5320,6 +5300,54 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="ef5e5cac-a6cc-45db-9314-d694842eaf66" targetElement="#897fe205-a2a9-4169-aaba-3a41145937e2"
                   sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="376ca08a-9e6b-4cc3-9e62-c3aac097d080" targetElement="#f9ad5a43-2510-4cdb-a858-5dfed7455f3a"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="78b4f540-51f3-455b-9d0c-507cf3e734bf" targetElement="#f203d17f-d7e8-4105-8b64-c2590e0f97ba"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="a4c948a2-3f59-4611-8819-3f657c3545fb" targetElement="#2243975b-6550-4cce-a75c-ba608ec2b51a"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="d544f2ff-4c76-4dee-b210-a0ba2b06da76" targetElement="#fa8e934d-f39e-421f-92bc-7f8d8611c9c0"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="2dc851be-aba4-45fc-8d13-3e9c7bcbcf7f" targetElement="#f01dbfdb-fa8f-4e51-aad4-beed670d8bc4"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="e2a8ea5a-fe20-42ad-a189-a01d9300a0e5" targetElement="#a8e3b331-9513-4ac1-8d47-406968360c70"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="5098b077-2e29-498a-9188-c81c5c59e2c3" targetElement="#23e63c4c-b846-42aa-bbee-4d74207e845d"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="1b593357-98e0-4586-8000-ee202b1c2186" targetElement="#3e3b7e5c-89cb-4121-8a27-f40dd4e30465"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="4ed8c2b7-caae-4703-a5ed-30e603f3319d" targetElement="#c456a87f-16d3-4fe1-a047-312edc00cdbb"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="567afbf1-5fa0-4b7c-b2d5-6dea3e1401fd" targetElement="#727faee2-8f56-4759-b877-a24151d8d588"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="5f33183c-1c13-4e22-b089-fdf708d44963" targetElement="#3d65cfe7-e912-4f36-95db-1a14f6684583"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="bc80eebc-571c-4a1e-b479-80ea4ba73c5a" targetElement="#0485bf1b-cc24-4be3-b530-2a75b18d625f"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="74dc07f6-90e1-4d6c-9405-6eda4111a650" targetElement="#6d6d0cc8-ea60-4366-96c9-1ef63671cee9"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="b597cf45-50e6-4402-a68f-fbb15ff32c2f" targetElement="#06422746-9ecb-4948-b337-c806283ab427"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="ed5d421a-4f5a-4245-987d-c70cf3b81b92" targetElement="#0bc47df6-429c-45bc-9a4a-dae872fe8362"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="b06ad913-a18d-46ce-bc91-3be97f680d67" targetElement="#8b46ccac-0832-405e-af6d-9274966e0535"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="145c9066-16a9-4aa8-b927-59f643a47c11" name="CP 1" orientation="IN"
                   kind="FLOW">
@@ -5347,12 +5375,87 @@
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="94833be5-3296-4d9d-82fd-eb39bf91d995" name="Project Artifact Repo">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="66072703-1751-40d9-9c58-5b72fbca443e" targetElement="#63907343-d564-4b83-9ea3-1536c962c3ab"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="510866cc-5718-4171-aa08-3aac6a852e2b" targetElement="#6377695a-0907-4362-877a-73d095c9b4e2"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="1b32e7dd-bd4e-4e86-871d-1fdf1321a379" targetElement="#818ce9f4-dc12-4c99-809f-d712c785279f"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="7e40dcc9-46dc-4b50-9c0d-4b1c57d42a34" targetElement="#9e1e3a5d-caa5-4ea8-a90f-e68bbdcdc315"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="795d114d-43e1-4498-bc46-3ae264ca5991" targetElement="#ad22ebed-7cfa-4399-b7e7-80f283e6e0d3"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="9654e4d0-7909-450c-aa31-45f3d0bd37f4" targetElement="#94eacd07-680e-4336-929f-9710fbc72634"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="d9aefb75-39ce-4be3-b9f0-24e4e20bdc32" targetElement="#41a4d648-7ad3-48a8-98a9-0390e6519d19"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="f6b56629-47b4-4ae6-92b2-d1ed674a504b" targetElement="#6745f614-c94c-407a-b8bf-65a23b31781f"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="2c04719a-b558-4b81-aa0c-3e2a573e7ebc" targetElement="#3776ba30-96c0-4d21-8578-82e8dd190d34"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="73845e4f-180e-412c-9800-b422c0d11797" targetElement="#3875f9f1-6831-4012-b77f-2f8ad1320c12"
+                  sourceElement="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="69f260a7-1ac6-4f50-a5a1-1b1ce10ee315" name="CP 1" orientation="IN"
                   kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="cd885340-ac19-486e-b903-d643de5e9ce8" name="work space manager">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="ca328d45-d158-445d-b492-3bfa4ac390f5" targetElement="#287dfff0-a9af-4ef8-91f3-ef9d596a7b1f"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="07678c44-ce3d-4750-a76c-3eefa167eb99" targetElement="#f2085e91-ec98-417b-be54-967bcbc93ab5"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="81f1b1b9-35c1-47c3-9d9b-714fe8a17b86" targetElement="#3d9c9c56-da07-4a4c-98a4-469f6f468587"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="880cb32f-3df6-4bc5-b2d9-81fcaf86d15c" targetElement="#d1cb66e5-12f8-482d-b480-b2ee82d2e070"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="4de0385f-c3d6-4829-a509-735dad0fe056" targetElement="#97ad6470-ec93-421a-b36d-99d0fa36f7f7"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="02918dc6-c370-4941-ae07-918d8ac72f2b" targetElement="#4fee03d6-a66e-48ac-8acd-d77365665fd4"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="09b8165c-e212-4b22-b6f5-5353a80cc3f9" targetElement="#cbdd6bff-5d52-4fde-8fa8-ce3842b76963"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="1b899a72-94ac-4433-b772-a811b962c223" targetElement="#05a9a92a-32af-4c62-890d-c7714dd334c8"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="dbc8f53e-4f24-4c26-a69a-412cbaaf74d9" targetElement="#a30c8fcf-ad6c-4551-9ec8-7695d7966559"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="28ddfad1-97cb-4960-b009-37d2c5f8ccb7" targetElement="#052a695d-90c3-4c6c-98a1-08d585dc6f7b"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="6f7bc2f5-0ef8-4d8a-abdf-979b867e7426" targetElement="#e301fb72-49c8-424e-966f-7ce188770d10"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="580f532b-caf5-4923-9e4c-3540adc23c71" targetElement="#eeeb0cb4-74a6-4c68-a3bd-a0a631690191"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="09544d82-97fd-4521-add5-d806ca271ef4" targetElement="#48568d37-7db8-46e4-8612-4f665e006b13"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="ecea6bf4-59e4-40bd-84bf-71c06065576f" targetElement="#e1247838-df97-474b-a900-aa26198f3858"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="7173cd8b-990c-4407-bbc9-24b9a8d78b1a" targetElement="#43f8c11f-7b5d-4531-aa65-95e5e8d1d6d8"
+                  sourceElement="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="f0d238c7-5c37-41ae-8bb6-77f4848cb1bc" name="CP 1" orientation="IN"
                   kind="FLOW"/>
