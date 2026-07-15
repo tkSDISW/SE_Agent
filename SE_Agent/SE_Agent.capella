@@ -3524,26 +3524,6 @@
               id="897fe205-a2a9-4169-aaba-3a41145937e2" name="Execute MCP Artifact Repo Commands">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="d9c800cc-809a-4811-85d4-e617edea45d5" name="FIP 1"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="820877a8-ca7c-4d7e-89d8-8a25a2938ede" name="write_artifact"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="dca731db-6be0-4892-85d1-bd5ea26e50d8" name="delete_artifact"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="d461e9bf-883a-4f3d-97c8-f72dc2e8c385" name="browse_artifact_repo"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="df2ea669-ecc9-4159-823d-2c890bea3a50" name="cleanup_session"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="76a9d6ee-3435-4c3b-acf5-183ccfaa741c" name="read_artifact"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="c0d27715-e0a6-4201-8919-e1cc14cf9caa" name="clone_artifact_repo"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="85765665-1a7e-4af4-9585-9d04eaa04fad" name="push_artifacts"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="96dc86f1-99e4-45f2-bc79-be443ea4105d" name="search_artifacts"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="3e886b95-94da-470f-a52a-2bee6cc0f20c" name="get_artifacts_versions"/>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="523d7056-448a-4214-8758-24a527e431bf" name="list_artifact_packages"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="ff759f2f-6c06-4548-8302-05748590cdb4" name="Execute API">
@@ -3562,10 +3542,6 @@
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="dafcdc79-4588-489d-91c4-7b88e62f3516" name="FOP 1"/>
           </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="d450a790-26f0-486d-98ad-194a45d7818f" name="list_artifact_branchers"/>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="50088a4b-1013-40f0-b32e-af8cbc9e45a3" name="create_artifact_branch"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0492196d-a1c2-4c43-ab74-cf3769ff9f6a" name="XNI to SysMK V2"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
@@ -4395,6 +4371,15 @@
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
               id="734fa551-6bd3-478e-bb3f-b64476ff53c3" name="C 1" source="#ec737552-11c8-4665-b3a1-11b8d6c71eea"
               target="#8ae7f7df-e19b-48c9-92ef-0fd8653a2541" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="7c9b7021-6790-44e6-9c23-463ef07960e5" name="C 2" source="#102da2cd-288d-4447-99ed-d9d8811de9d8"
+              target="#64dacc25-ab71-4326-bb93-e48ed91f07e4" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="4e8fa0c7-aedb-4e5e-8ec9-7d9986c8f7db" name="C 3" source="#59f2b36c-f352-43d7-8d25-74929124a7c1"
+              target="#69f260a7-1ac6-4f50-a5a1-1b1ce10ee315" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="0772baf8-af48-4e87-8c51-9eb25f37936f" name="C 4" source="#4d9c15af-2bc1-4fe8-9188-c4b4db0a3387"
+              target="#f0d238c7-5c37-41ae-8bb6-77f4848cb1bc" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
               id="6458d228-b2e0-4cee-84d6-4ca237c83628" name="Capability" orientation="OUT"
               kind="FLOW"/>
@@ -4409,10 +4394,12 @@
               name="Knowledge Partner MCP" abstractType="#e60a31a8-1660-451a-a291-04e0e4ddf43b"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d0a0a1e1-8194-4da6-a9f0-e5b18c5ae13a"
               name="SE KP Agent ECO System " abstractType="#76ff6999-aba4-4eee-97ec-88849623a3ae"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a3f4de42-5bff-4c96-9445-d76bacc1259f"
-              name="Claude AI Project" abstractType="#b52486dc-8296-4ea6-8b60-b8254d0aaa0d"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="421986ff-183e-4e10-a7af-61d34248ddd5"
               name="V1 Translator MCP" abstractType="#f276e90e-af40-4f7a-8d6d-e720c30761ad"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6442b062-451c-42eb-9125-c3f9db275260"
+              name="Knowledge Partner MCPs" abstractType="#ecab77ca-27fc-476d-94b1-7a539e2f4a1b"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ad2a6dea-4f00-4710-a9b9-9b005a2533b6"
+              name="Claude AI" abstractType="#da8c8b45-80b4-4775-8567-e225d2241d8c"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="20bd2c58-ebd6-44f8-b9e1-e58042643c11" targetElement="#0ca84677-2a0f-49aa-9463-44edccd21bcb"
               sourceElement="#e62ee8a1-3af5-48da-b881-a113fc9e1d86"/>
@@ -4473,8 +4460,6 @@
               id="e60a31a8-1660-451a-a291-04e0e4ddf43b" name="Knowledge Partner MCP">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4d6f9b12-2b86-4441-8ebd-fa3601661773"
                 name="Notebook_Repo" abstractType="#23b38808-d85b-4c74-a01e-2afb85eb11b8"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cfcdc6fd-4b17-4914-92b7-ff3cc7a1feed"
-                name="Artifact-Repository MCP" abstractType="#085e223e-cc0d-453c-aecc-0493db782c61"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="8ae7f7df-e19b-48c9-92ef-0fd8653a2541" name="CP 3" orientation="IN"
                 kind="FLOW"/>
@@ -4486,70 +4471,6 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="620b8462-505a-4f41-b3e0-ca94dab95cda" name="CP 3" orientation="OUT"
                   kind="FLOW"/>
-            </ownedLogicalComponents>
-            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="085e223e-cc0d-453c-aecc-0493db782c61" name="Artifact-Repository MCP"
-                description="&lt;h2>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Artifact Repository MCP &amp;mdash; Service Summary&lt;/span>&lt;/span>&lt;/span>&lt;/h2>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:13px&quot;>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>A FastMCP server (&lt;code>kp/artifact_repo/server.py&lt;/code>, port 8002, &lt;code>streamable-http&lt;/code> transport at &lt;code>POST /mcp&lt;/code>) that exposes &lt;strong>CRUD operations over Pydantic-typed, git-backed artifacts&lt;/strong> stored in a GitHub repo. Everything is session-scoped: clone a repo to get a &lt;code>session_id&lt;/code>, operate on it, then push and clean up.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Session lifecycle&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>clone_artifact_repo(remote_url, pat, branch)&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; clones a GitHub repo (PAT injected into the HTTPS URL, scrubbed from error output) into a temp dir on the server, wraps it in a&amp;nbsp;&lt;code>GitStore&lt;/code>, and returns a&amp;nbsp;&lt;code>session_id&lt;/code>. Must be called first.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>cleanup_session(session_id)&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; deletes the local clone and frees the session.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>CRUD / discovery (backed by&amp;nbsp;&lt;span style=&quot;font-size:large&quot;>&lt;code>GitStore&lt;/code>&lt;/span>&amp;nbsp;&amp;rarr;&amp;nbsp;&lt;code>&lt;span style=&quot;font-size:large&quot;>FilesystemStore&lt;/span>&lt;/code>, auto-committing on every write/delete)&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>list_artifact_packages&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; list package names in the repo.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>browse_artifact_repo&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; list artifact metadata in a package, filterable by type/name substring, with a result limit.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>read_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; fetch one artifact&amp;#39;s&amp;nbsp;&lt;code>metadata&lt;/code>,&amp;nbsp;&lt;code>content_str&lt;/code>, and&amp;nbsp;&lt;code>type&lt;/code>&amp;nbsp;by ID.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>write_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; create or overwrite an artifact (package auto-created); content format depends on&amp;nbsp;&lt;code>type&lt;/code>&amp;nbsp;(CSV for&amp;nbsp;&lt;code>table&lt;/code>, YAML for&amp;nbsp;&lt;code>yaml&lt;/code>/&lt;code>arcadia_fabric&lt;/code>, Markdown for&amp;nbsp;&lt;code>text&lt;/code>/&lt;code>session_summary&lt;/code>, JSON for others); supports tags,&amp;nbsp;&lt;code>source_tool&lt;/code>, and&amp;nbsp;&lt;code>lineage&lt;/code>&amp;nbsp;(parent artifact IDs) for traceability.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>delete_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; remove an artifact (also git-removes its files and commits).&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>get_artifact_versions&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; git commit history (&lt;code>commit&lt;/code>,&amp;nbsp;&lt;code>timestamp&lt;/code>,&amp;nbsp;&lt;code>message&lt;/code>) for a given artifact.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>search_artifacts&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; case-insensitive full-text search across names, tags, and content, with optional type filter.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Branching (the change reviewed earlier in this session)&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>list_artifact_branches&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; lists remote branches (via&amp;nbsp;&lt;code>git branch -r&lt;/code>,&amp;nbsp;&lt;code>origin/&lt;/code>&amp;nbsp;prefix stripped).&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>create_artifact_branch&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; creates a new branch from the session clone&amp;#39;s current HEAD, optionally pushing it upstream immediately.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Prompt rendering&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>render_prompt&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; finds a&amp;nbsp;&lt;code>prompt_def&lt;/code>&amp;nbsp;artifact by name in a package, renders it with Jinja2 against supplied variables, and optionally saves the rendered output as a&amp;nbsp;&lt;code>prompt&lt;/code>&amp;nbsp;artifact with lineage back to the&amp;nbsp;&lt;code>prompt_def&lt;/code>.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Sync&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>push_artifacts&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; pushes all locally committed artifacts back to the remote GitHub repo (call before&amp;nbsp;&lt;code>cleanup_session&lt;/code>&amp;nbsp;to persist work).&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Registered artifact types&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:13px&quot;>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>&lt;code>arcadia_fabric&lt;/code>, &lt;code>json&lt;/code>, &lt;code>prompt&lt;/code>, &lt;code>prompt_def&lt;/code>, &lt;code>session_summary&lt;/code>, &lt;code>table&lt;/code>, &lt;code>text&lt;/code>, &lt;code>yaml&lt;/code> (registry in registry.py, extensible at runtime via &lt;code>register_artifact_type&lt;/code>).&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Notable design points&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;code>GitStore&lt;/code>&amp;nbsp;(git_store.py) auto-commits on every write/delete with descriptive messages, but never auto-pushes &amp;mdash;&amp;nbsp;&lt;code>push_artifacts&lt;/code>&amp;nbsp;is explicit.&lt;/li>&#xA;&#x9;&lt;li>Transport security restricts allowed hosts (&lt;code>repo.innovatingwithcapella.com&lt;/code>, localhost variants) with DNS-rebinding protection enabled.&lt;/li>&#xA;&#x9;&lt;li>Degrades gracefully to plain filesystem behavior if the cloned directory isn&amp;#39;t a real git repo (&lt;code>_git_ok&lt;/code>&amp;nbsp;guard).&lt;/li>&#xA;&lt;/ul>&#xA;">
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="32a1bd8d-22e6-49b1-a001-d8a2fd86499b" targetElement="#dca731db-6be0-4892-85d1-bd5ea26e50d8"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="cca2d674-a483-4dd7-be90-8bc1c5b73771" targetElement="#3e886b95-94da-470f-a52a-2bee6cc0f20c"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="9f4cebb7-89e4-4567-a03f-c35db3304861" targetElement="#d461e9bf-883a-4f3d-97c8-f72dc2e8c385"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="0cb61dbc-4ac3-4a50-9d34-fce74e034536" targetElement="#523d7056-448a-4214-8758-24a527e431bf"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="10cd1f3a-ca6e-49c2-8ee1-827086c9547e" targetElement="#76a9d6ee-3435-4c3b-acf5-183ccfaa741c"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="1ddf6fff-42ba-4f10-a55f-8449cb7aa7fc" targetElement="#96dc86f1-99e4-45f2-bc79-be443ea4105d"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="0208309c-6ba1-444b-a325-2b9aba040395" targetElement="#820877a8-ca7c-4d7e-89d8-8a25a2938ede"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="642be457-0596-4c3c-bdfe-181bf467b821" targetElement="#c0d27715-e0a6-4201-8919-e1cc14cf9caa"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="f34b2c88-934c-4aa0-9b3e-03bb0530867e" targetElement="#85765665-1a7e-4af4-9585-9d04eaa04fad"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="f3e65835-85bb-49dd-b342-5464c58df5d6" targetElement="#df2ea669-ecc9-4159-823d-2c890bea3a50"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="ef5e5cac-a6cc-45db-9314-d694842eaf66" targetElement="#897fe205-a2a9-4169-aaba-3a41145937e2"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="35c55fc5-4c79-4a54-9fbb-4d7153f79090" targetElement="#d450a790-26f0-486d-98ad-194a45d7818f"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="323fd240-67f2-4343-b360-2f6da44bd138" targetElement="#50088a4b-1013-40f0-b32e-af8cbc9e45a3"
-                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="145c9066-16a9-4aa8-b927-59f643a47c11" name="CP 1" orientation="IN"
-                  kind="FLOW">
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="daab8f84-39b8-4a86-b118-9a216167901f" targetElement="#d9c800cc-809a-4811-85d4-e617edea45d5"
-                    sourceElement="#145c9066-16a9-4aa8-b927-59f643a47c11"/>
-              </ownedFeatures>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="35a6f280-981f-40e1-91cf-24e9fc347ad9" name="CP 2" orientation="OUT"
-                  kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3df7ea97-434e-4ccd-922d-1ed315e6cc1c"
-                  name="Prompt-Library" abstractType="#acb33ed4-09ea-462a-9553-ea000db285df"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="61dc2959-d6f2-45fa-8636-16ce121ebbbe" name="CP 4" orientation="IN"
-                  kind="FLOW"/>
-              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="acb33ed4-09ea-462a-9553-ea000db285df" name="Prompt-Library">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="6baf567e-053a-480f-a6ed-8da8b97165da" name="CP 1" orientation="OUT"
-                    kind="FLOW"/>
-              </ownedLogicalComponents>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -5235,19 +5156,6 @@
             </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="b52486dc-8296-4ea6-8b60-b8254d0aaa0d" name="Claude AI Project">
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="f20342b1-9092-48b9-9249-c793ae2d46d3" name="CP 5" orientation="IN"
-                kind="FLOW"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="b6be8159-f9b4-4a32-a09a-c378567ba215" name="CP 2" orientation="OUT"
-                kind="FLOW"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="790bbaac-0893-4cce-a329-9fa082e6e661"
-                name="Instructions" abstractType="#0d92666a-875b-4d59-b133-b359ec095054"/>
-            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="0d92666a-875b-4d59-b133-b359ec095054" name="Instructions"/>
-          </ownedLogicalComponents>
-          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="f276e90e-af40-4f7a-8d6d-e720c30761ad" name="V1 Translator MCP">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="fa5084f0-b000-49d0-a702-40c48183ae46" name="CP 1" orientation="IN"
@@ -5265,6 +5173,113 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="c2f4b87f-acad-421b-944a-59a7d0c0870e" targetElement="#0492196d-a1c2-4c43-ab74-cf3769ff9f6a"
                   sourceElement="#2e6db017-05f4-47d2-80d2-c2335d0dd4c5"/>
+            </ownedLogicalComponents>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="ecab77ca-27fc-476d-94b1-7a539e2f4a1b" name="Knowledge Partner MCPs">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cfcdc6fd-4b17-4914-92b7-ff3cc7a1feed"
+                name="Knowledge Repo " abstractType="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d6283617-2482-4093-9c3a-f83435e4988c"
+                name="Project Artifact Repo" abstractType="#94833be5-3296-4d9d-82fd-eb39bf91d995"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c0c1d9f7-af86-4c3e-b02b-448ac1e7ebf0"
+                name="work space manager" abstractType="#cd885340-ac19-486e-b903-d643de5e9ce8"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="085e223e-cc0d-453c-aecc-0493db782c61" name="Knowledge Repo " description="&lt;h2>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Artifact Repository MCP &amp;mdash; Service Summary&lt;/span>&lt;/span>&lt;/span>&lt;/h2>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:13px&quot;>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>A FastMCP server (&lt;code>kp/artifact_repo/server.py&lt;/code>, port 8002, &lt;code>streamable-http&lt;/code> transport at &lt;code>POST /mcp&lt;/code>) that exposes &lt;strong>CRUD operations over Pydantic-typed, git-backed artifacts&lt;/strong> stored in a GitHub repo. Everything is session-scoped: clone a repo to get a &lt;code>session_id&lt;/code>, operate on it, then push and clean up.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Session lifecycle&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>clone_artifact_repo(remote_url, pat, branch)&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; clones a GitHub repo (PAT injected into the HTTPS URL, scrubbed from error output) into a temp dir on the server, wraps it in a&amp;nbsp;&lt;code>GitStore&lt;/code>, and returns a&amp;nbsp;&lt;code>session_id&lt;/code>. Must be called first.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>cleanup_session(session_id)&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; deletes the local clone and frees the session.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>CRUD / discovery (backed by&amp;nbsp;&lt;span style=&quot;font-size:large&quot;>&lt;code>GitStore&lt;/code>&lt;/span>&amp;nbsp;&amp;rarr;&amp;nbsp;&lt;code>&lt;span style=&quot;font-size:large&quot;>FilesystemStore&lt;/span>&lt;/code>, auto-committing on every write/delete)&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>list_artifact_packages&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; list package names in the repo.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>browse_artifact_repo&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; list artifact metadata in a package, filterable by type/name substring, with a result limit.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>read_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; fetch one artifact&amp;#39;s&amp;nbsp;&lt;code>metadata&lt;/code>,&amp;nbsp;&lt;code>content_str&lt;/code>, and&amp;nbsp;&lt;code>type&lt;/code>&amp;nbsp;by ID.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>write_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; create or overwrite an artifact (package auto-created); content format depends on&amp;nbsp;&lt;code>type&lt;/code>&amp;nbsp;(CSV for&amp;nbsp;&lt;code>table&lt;/code>, YAML for&amp;nbsp;&lt;code>yaml&lt;/code>/&lt;code>arcadia_fabric&lt;/code>, Markdown for&amp;nbsp;&lt;code>text&lt;/code>/&lt;code>session_summary&lt;/code>, JSON for others); supports tags,&amp;nbsp;&lt;code>source_tool&lt;/code>, and&amp;nbsp;&lt;code>lineage&lt;/code>&amp;nbsp;(parent artifact IDs) for traceability.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>delete_artifact&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; remove an artifact (also git-removes its files and commits).&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>get_artifact_versions&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; git commit history (&lt;code>commit&lt;/code>,&amp;nbsp;&lt;code>timestamp&lt;/code>,&amp;nbsp;&lt;code>message&lt;/code>) for a given artifact.&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>search_artifacts&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; case-insensitive full-text search across names, tags, and content, with optional type filter.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Branching (the change reviewed earlier in this session)&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>list_artifact_branches&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; lists remote branches (via&amp;nbsp;&lt;code>git branch -r&lt;/code>,&amp;nbsp;&lt;code>origin/&lt;/code>&amp;nbsp;prefix stripped).&lt;/li>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>create_artifact_branch&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; creates a new branch from the session clone&amp;#39;s current HEAD, optionally pushing it upstream immediately.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Prompt rendering&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>render_prompt&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; finds a&amp;nbsp;&lt;code>prompt_def&lt;/code>&amp;nbsp;artifact by name in a package, renders it with Jinja2 against supplied variables, and optionally saves the rendered output as a&amp;nbsp;&lt;code>prompt&lt;/code>&amp;nbsp;artifact with lineage back to the&amp;nbsp;&lt;code>prompt_def&lt;/code>.&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Sync&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;strong>&lt;code>push_artifacts&lt;/code>&lt;/strong>&amp;nbsp;&amp;mdash; pushes all locally committed artifacts back to the remote GitHub repo (call before&amp;nbsp;&lt;code>cleanup_session&lt;/code>&amp;nbsp;to persist work).&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Registered artifact types&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:13px&quot;>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>&lt;code>arcadia_fabric&lt;/code>, &lt;code>json&lt;/code>, &lt;code>prompt&lt;/code>, &lt;code>prompt_def&lt;/code>, &lt;code>session_summary&lt;/code>, &lt;code>table&lt;/code>, &lt;code>text&lt;/code>, &lt;code>yaml&lt;/code> (registry in registry.py, extensible at runtime via &lt;code>register_artifact_type&lt;/code>).&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>&#xA;&#xA;&lt;h3>&lt;span style=&quot;color:#3b3b3b&quot;>&lt;span style=&quot;font-family:-apple-system,BlinkMacSystemFont,&amp;quot;Segoe UI&amp;quot;,Roboto,sans-serif&quot;>&lt;span style=&quot;background-color:#f8f8f8&quot;>Notable design points&lt;/span>&lt;/span>&lt;/span>&lt;/h3>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&lt;code>GitStore&lt;/code>&amp;nbsp;(git_store.py) auto-commits on every write/delete with descriptive messages, but never auto-pushes &amp;mdash;&amp;nbsp;&lt;code>push_artifacts&lt;/code>&amp;nbsp;is explicit.&lt;/li>&#xA;&#x9;&lt;li>Transport security restricts allowed hosts (&lt;code>repo.innovatingwithcapella.com&lt;/code>, localhost variants) with DNS-rebinding protection enabled.&lt;/li>&#xA;&#x9;&lt;li>Degrades gracefully to plain filesystem behavior if the cloned directory isn&amp;#39;t a real git repo (&lt;code>_git_ok&lt;/code>&amp;nbsp;guard).&lt;/li>&#xA;&lt;/ul>&#xA;">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="ef5e5cac-a6cc-45db-9314-d694842eaf66" targetElement="#897fe205-a2a9-4169-aaba-3a41145937e2"
+                  sourceElement="#085e223e-cc0d-453c-aecc-0493db782c61"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="145c9066-16a9-4aa8-b927-59f643a47c11" name="CP 1" orientation="IN"
+                  kind="FLOW">
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="daab8f84-39b8-4a86-b118-9a216167901f" targetElement="#d9c800cc-809a-4811-85d4-e617edea45d5"
+                    sourceElement="#145c9066-16a9-4aa8-b927-59f643a47c11"/>
+              </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="35a6f280-981f-40e1-91cf-24e9fc347ad9" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3df7ea97-434e-4ccd-922d-1ed315e6cc1c"
+                  name="Prompt-Library" abstractType="#acb33ed4-09ea-462a-9553-ea000db285df"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="61dc2959-d6f2-45fa-8636-16ce121ebbbe" name="CP 4" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="64dacc25-ab71-4326-bb93-e48ed91f07e4" name="CP 5" orientation="IN"
+                  kind="FLOW"/>
+              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                  id="acb33ed4-09ea-462a-9553-ea000db285df" name="Prompt-Library">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="6baf567e-053a-480f-a6ed-8da8b97165da" name="CP 1" orientation="OUT"
+                    kind="FLOW"/>
+              </ownedLogicalComponents>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="94833be5-3296-4d9d-82fd-eb39bf91d995" name="Project Artifact Repo">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="69f260a7-1ac6-4f50-a5a1-1b1ce10ee315" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="cd885340-ac19-486e-b903-d643de5e9ce8" name="work space manager">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="f0d238c7-5c37-41ae-8bb6-77f4848cb1bc" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+            </ownedLogicalComponents>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="da8c8b45-80b4-4775-8567-e225d2241d8c" name="Claude AI">
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="ac06a6a1-e628-4ced-bb44-6f9510aed2ed" name="C 1" source="#94c78386-02d3-4df2-9c76-64854b5f81b4"
+                target="#557dd2ba-a489-4dd1-ac51-aaf60bf20f37" kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a3f4de42-5bff-4c96-9445-d76bacc1259f"
+                name="Claude AI Project" abstractType="#b52486dc-8296-4ea6-8b60-b8254d0aaa0d"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4e37dd55-ebe9-4a65-8b19-b9d79072edab"
+                name="Connectors" abstractType="#3d0f8c1f-26a2-4252-8f75-f888aaaf91c4"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="b52486dc-8296-4ea6-8b60-b8254d0aaa0d" name="Claude AI Project">
+              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                  id="f1d99c56-c817-4b37-aab3-a6db6694c179" name="C 1" source="#2d73f047-ce5e-4bd4-951e-610cf750b653"
+                  target="#1eec4c81-0c24-4dfc-aa84-d74dee342bd1" kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="f20342b1-9092-48b9-9249-c793ae2d46d3" name="CP 5" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="b6be8159-f9b4-4a32-a09a-c378567ba215" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="790bbaac-0893-4cce-a329-9fa082e6e661"
+                  name="Instructions" abstractType="#0d92666a-875b-4d59-b133-b359ec095054"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e575fc1b-9ba6-4f68-bb03-de2ffeea637a"
+                  name="Claude Session" abstractType="#9d333c5b-2f8a-459d-b2ca-7ed1d0e2a04a"/>
+              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                  id="0d92666a-875b-4d59-b133-b359ec095054" name="Instructions">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="1eec4c81-0c24-4dfc-aa84-d74dee342bd1" name="CP 1" orientation="IN"
+                    kind="FLOW"/>
+              </ownedLogicalComponents>
+              <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                  id="9d333c5b-2f8a-459d-b2ca-7ed1d0e2a04a" name="Claude Session">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="94c78386-02d3-4df2-9c76-64854b5f81b4" name="CP 4" orientation="OUT"
+                    kind="FLOW"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                    id="2d73f047-ce5e-4bd4-951e-610cf750b653" name="CP 2" orientation="OUT"
+                    kind="FLOW"/>
+              </ownedLogicalComponents>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="3d0f8c1f-26a2-4252-8f75-f888aaaf91c4" name="Connectors">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="102da2cd-288d-4447-99ed-d9d8811de9d8" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="59f2b36c-f352-43d7-8d25-74929124a7c1" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="4d9c15af-2bc1-4fe8-9188-c4b4db0a3387" name="CP 3" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="557dd2ba-a489-4dd1-ac51-aaf60bf20f37" name="CP 4" orientation="IN"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
