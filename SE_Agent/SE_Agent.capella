@@ -3596,7 +3596,38 @@
                 name="Cleanup Session"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo"/>
+              id="26ed3b5f-dbc2-4829-919b-bec2250e6b0b" name="Manage Project Artifact Repo">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="63907343-d564-4b83-9ea3-1536c962c3ab" description="Clone a git repository and start a session (pass api_key). Landing point for promoted workspace outputs (FMEA, Pugh matrices, trade studies, requirements analyses). Never point at the Capella model repo."
+                name="Create Session"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="6377695a-0907-4362-877a-73d095c9b4e2" description="Standard CRUD on main branch"
+                name="List Artifact Packages"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="818ce9f4-dc12-4c99-809f-d712c785279f" description="Standard CRUD on main branch"
+                name="Browse Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="9e1e3a5d-caa5-4ea8-a90f-e68bbdcdc315" description="Standard CRUD on main branch"
+                name="Read Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="ad22ebed-7cfa-4399-b7e7-80f283e6e0d3" description="Promotion pattern step 2: project-artifact-repo.write_artifact(package, type, name, content_str) places the content read from a workspace output (step 1: workspace-manager.read_workspace_artifact). This is the promotion landing point."
+                name="Write Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="94eacd07-680e-4336-929f-9710fbc72634" description="Standard CRUD on main branch"
+                name="Delete Artifact"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="41a4d648-7ad3-48a8-98a9-0390e6519d19" description="Standard CRUD on main branch"
+                name="Search Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="6745f614-c94c-407a-b8bf-65a23b31781f" description="Git commit history for an artifact"
+                name="Get Artifact Versions"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3776ba30-96c0-4d21-8578-82e8dd190d34" description="Standard CRUD on main branch"
+                name="Push Artifacts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="3875f9f1-6831-4012-b77f-2f8ad1320c12" description="Release server resources when done"
+                name="Cleanup Session"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="5537041d-020b-4869-94a5-843711c6a705" name="Manage Work Space">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
